@@ -1,0 +1,2946 @@
+[
+  {
+    "number": 159,
+    "title": "[US076] Integración de tests en CI/CD",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/159",
+    "created_at": "2025-11-11T21:21:59+00:00",
+    "closed_at": null,
+    "labels": [
+      "documentation",
+      "enhancement",
+      "sprint-5",
+      "integration",
+      "medium"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "User Story\n---\nAutomatizar la ejecución de pruebas unitarias y de integración en el pipeline CI/CD para asegurar calidad continua antes de cada merge.\n\nAcceptance Criteria\n\n- [ ] Tests corren automáticamente en cada push y PR.\n- [ ] Falla el pipeline si algún test falla.\n- [ ] Reportes de resultados accesibles para el equipo.\n- [ ] Documentación de la integración y troubleshooting.\n\nTasks\n---\n\n- [ ] Añadir jobs de test a workflows de GitHub Actions.\n- [ ] Configurar matrices para diferentes entornos (Node, Flutter).\n- [ ] Validar ejecución automática en PRs y merges.\n- [ ] Publicar resultados y logs.\n- [ ] Documentar integración y solución de problemas.\n\n**Story Points:** 3  \n**Estimación:** 8-12h  \n**Prioridad:** Media  \n**Dependencias:** Acceso a workflows; permisos de CI/CD",
+    "user_story": "---\nAutomatizar la ejecución de pruebas unitarias y de integración en el pipeline CI/CD para asegurar calidad continua antes de cada merge.",
+    "acceptance_criteria": [
+      "Tests corren automáticamente en cada push y PR.",
+      "Falla el pipeline si algún test falla.",
+      "Reportes de resultados accesibles para el equipo.",
+      "Documentación de la integración y troubleshooting."
+    ],
+    "tasks": [
+      "Añadir jobs de test a workflows de GitHub Actions.",
+      "Configurar matrices para diferentes entornos (Node, Flutter).",
+      "Validar ejecución automática en PRs y merges.",
+      "Publicar resultados y logs.",
+      "Documentar integración y solución de problemas."
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 8-12h",
+    "prioridad": "** Media",
+    "dependencias": "** Acceso a workflows; permisos de CI/CD"
+  },
+  {
+    "number": 158,
+    "title": "[US075] Cobertura de código y reportes",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/158",
+    "created_at": "2025-11-11T21:21:06+00:00",
+    "closed_at": null,
+    "labels": [
+      "documentation",
+      "sprint-5",
+      "reporting",
+      "analytics",
+      "medium"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "User Story\n---\nConfigurar y mantener la generación automática de reportes de cobertura de código para backend y frontend, facilitando la visualización y mejora continua.\n\nAcceptance Criteria\n\n- [ ] Reportes de cobertura generados automáticamente en cada push.\n- [ ] Acceso fácil a reportes históricos desde CI/CD.\n- [ ] Alertas si la cobertura baja del umbral definido.\n- [ ] Documentación de acceso y uso de reportes.\n\nTasks\n---\n\n- [ ] Configurar herramientas de coverage (Jest, lcov, cobertura Dart).\n- [ ] Integrar generación de reportes en pipeline CI/CD.\n- [ ] Publicar reportes en dashboard o como artefactos.\n- [ ] Configurar alertas de umbral.\n- [ ] Documentar acceso y mantenimiento.\n\n**Story Points:** 3  \n**Estimación:** 8-12h  \n**Prioridad:** Media  \n**Dependencias:** Pipeline CI/CD; herramientas de coverage instaladas",
+    "user_story": "---\nConfigurar y mantener la generación automática de reportes de cobertura de código para backend y frontend, facilitando la visualización y mejora continua.",
+    "acceptance_criteria": [
+      "Reportes de cobertura generados automáticamente en cada push.",
+      "Acceso fácil a reportes históricos desde CI/CD.",
+      "Alertas si la cobertura baja del umbral definido.",
+      "Documentación de acceso y uso de reportes."
+    ],
+    "tasks": [
+      "Configurar herramientas de coverage (Jest, lcov, cobertura Dart).",
+      "Integrar generación de reportes en pipeline CI/CD.",
+      "Publicar reportes en dashboard o como artefactos.",
+      "Configurar alertas de umbral.",
+      "Documentar acceso y mantenimiento."
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 8-12h",
+    "prioridad": "** Media",
+    "dependencias": "** Pipeline CI/CD; herramientas de coverage instaladas"
+  },
+  {
+    "number": 157,
+    "title": "[US074] Pruebas unitarias frontend mobile",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/157",
+    "created_at": "2025-11-11T21:20:50+00:00",
+    "closed_at": null,
+    "labels": [
+      "documentation",
+      "enhancement",
+      "sprint-5",
+      "integration",
+      "high"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "User Story\n---\nDesarrollar pruebas unitarias para la app móvil, asegurando que los widgets y lógica de negocio funcionen correctamente en diferentes escenarios.\n\nAcceptance Criteria\n\n- [ ] Cobertura mínima del 70% en widgets y viewmodels.\n- [ ] Tests ejecutan correctamente en local y CI.\n- [ ] Detección de errores en flujos de UI críticos.\n- [ ] Documentación de cómo ejecutar y agregar tests.\n\nTasks\n---\n\n- [ ] Identificar widgets y viewmodels críticos.\n- [ ] Escribir pruebas unitarias con Flutter/Dart.\n- [ ] Configurar scripts de test y coverage.\n- [ ] Ejecutar y validar resultados en CI.\n- [ ] Documentar proceso en README_TESTING.md.\n\n**Story Points:** 3  \n**Estimación:** 8-12h  \n**Prioridad:** Alta  \n**Dependencias:** Emuladores/dispositivos configurados; acceso a código fuente",
+    "user_story": "---\nDesarrollar pruebas unitarias para la app móvil, asegurando que los widgets y lógica de negocio funcionen correctamente en diferentes escenarios.",
+    "acceptance_criteria": [
+      "Cobertura mínima del 70% en widgets y viewmodels.",
+      "Tests ejecutan correctamente en local y CI.",
+      "Detección de errores en flujos de UI críticos.",
+      "Documentación de cómo ejecutar y agregar tests."
+    ],
+    "tasks": [
+      "Identificar widgets y viewmodels críticos.",
+      "Escribir pruebas unitarias con Flutter/Dart.",
+      "Configurar scripts de test y coverage.",
+      "Ejecutar y validar resultados en CI.",
+      "Documentar proceso en README_TESTING.md."
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 8-12h",
+    "prioridad": "** Alta",
+    "dependencias": "** Emuladores/dispositivos configurados; acceso a código fuente"
+  },
+  {
+    "number": 156,
+    "title": "[US073] Pruebas unitarias backend",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/156",
+    "created_at": "2025-11-11T21:20:29+00:00",
+    "closed_at": null,
+    "labels": [
+      "documentation",
+      "sprint-5",
+      "integration",
+      "high",
+      "backend"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "User Story\n---\nImplementar y mantener pruebas unitarias en el backend para asegurar la calidad y robustez de los servicios y controladores.\n\nAcceptance Criteria\n\n- [ ] Cobertura mínima del 80% en módulos críticos.\n- [ ] Tests ejecutan correctamente en local y CI.\n- [ ] Detección temprana de regresiones en endpoints principales.\n- [ ] Documentación de cómo ejecutar y agregar tests.\n\nTasks\n---\n\n- [ ] Identificar módulos y endpoints críticos a testear.\n- [ ] Escribir pruebas unitarias con Jest/Supertest.\n- [ ] Configurar scripts de test y coverage.\n- [ ] Ejecutar y validar resultados en CI.\n- [ ] Documentar proceso en README_TESTING.md.\n\n**Story Points:** 3  \n**Estimación:** 8-12h (coordinación inicial; ejecución puede extenderse)  \n**Prioridad:** Alta\n**Dependencias:** Acceso a base de datos de pruebas; scripts de seed",
+    "user_story": "---\nImplementar y mantener pruebas unitarias en el backend para asegurar la calidad y robustez de los servicios y controladores.",
+    "acceptance_criteria": [
+      "Cobertura mínima del 80% en módulos críticos.",
+      "Tests ejecutan correctamente en local y CI.",
+      "Detección temprana de regresiones en endpoints principales.",
+      "Documentación de cómo ejecutar y agregar tests."
+    ],
+    "tasks": [
+      "Identificar módulos y endpoints críticos a testear.",
+      "Escribir pruebas unitarias con Jest/Supertest.",
+      "Configurar scripts de test y coverage.",
+      "Ejecutar y validar resultados en CI.",
+      "Documentar proceso en README_TESTING.md."
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 8-12h (coordinación inicial; ejecución puede extenderse)",
+    "prioridad": "** Alta",
+    "dependencias": "** Acceso a base de datos de pruebas; scripts de seed"
+  },
+  {
+    "number": 149,
+    "title": "[US072] — Optimización y automatización de workflows",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/149",
+    "created_at": "2025-11-06T20:43:45+00:00",
+    "closed_at": null,
+    "labels": [
+      "bug",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📝 User Story\nComo DevOps Engineer quiero optimizar y automatizar los workflows de CI/CD para reducir tiempos de deployment, mejorar la calidad del código y garantizar entregas más rápidas y confiables\n✅ Acceptance Criteria\n\n- [ ] Pipeline de CI/CD completamente automatizado desde commit hasta producción\n- [ ] Tiempo de build y deployment reducido en al menos 40%\n- [ ] Ejecución automática de tests unitarios, integración y E2E\n- [ ] Code quality checks automáticos (linting, análisis estático)\n- [ ] Análisis de cobertura de código (mínimo 80%)\n- [ ] Deployment automático a staging tras merge a develop\n- [ ] Deployment a producción con aprobación manual\n- [ ] Rollback automático en caso de fallos post-deployment\n- [ ] Notificaciones automáticas de estado de pipelines (Slack/Email)\n- [ ] Cache de dependencias para acelerar builds\n- [ ] Paralelización de jobs independientes\n- [ ] Documentación de workflows y procesos\n\n📋 Tasks\n\n- [ ] Auditar workflows actuales e identificar cuellos de botella\n- [ ] Optimizar Dockerfile y uso de capas para builds más rápidos\n- [ ] Configurar cache de dependencias (npm, pip, gradle, etc.)\n- [ ] Implementar matrix builds para tests en paralelo\n- [ ] Integrar herramientas de code quality (SonarQube, ESLint, etc.)\n- [ ] Configurar análisis de cobertura de código\n- [ ] Crear workflow de deployment automático a staging\n- [ ] Implementar estrategia de deployment blue-green o canary\n- [ ] Configurar health checks post-deployment\n- [ ] Desarrollar scripts de rollback automático\n- [ ] Integrar notificaciones con Slack/Teams\n- [ ] Crear workflow de release con changelog automático\n- [ ] Implementar semantic versioning automático\n- [ ] Documentar procesos y mejores prácticas\n- [ ] Capacitar al equipo en nuevos workflows\n\nStory Points: 13\nEstimación: 28h\nPrioridad: Alta\nResponsable: DevOps Engineer / Tech Lead\nDependencies: US061 (Monitoreo), repositorios Git configurados",
+    "user_story": "Como DevOps Engineer quiero optimizar y automatizar los workflows de CI/CD para reducir tiempos de deployment, mejorar la calidad del código y garantizar entregas más rápidas y confiables\n✅",
+    "acceptance_criteria": [
+      "Pipeline de CI/CD completamente automatizado desde commit hasta producción",
+      "Tiempo de build y deployment reducido en al menos 40%",
+      "Ejecución automática de tests unitarios, integración y E2E",
+      "Code quality checks automáticos (linting, análisis estático)",
+      "Análisis de cobertura de código (mínimo 80%)",
+      "Deployment automático a staging tras merge a develop",
+      "Deployment a producción con aprobación manual",
+      "Rollback automático en caso de fallos post-deployment",
+      "Notificaciones automáticas de estado de pipelines (Slack/Email)",
+      "Cache de dependencias para acelerar builds",
+      "Paralelización de jobs independientes",
+      "Documentación de workflows y procesos"
+    ],
+    "tasks": [
+      "Auditar workflows actuales e identificar cuellos de botella",
+      "Optimizar Dockerfile y uso de capas para builds más rápidos",
+      "Configurar cache de dependencias (npm, pip, gradle, etc.)",
+      "Implementar matrix builds para tests en paralelo",
+      "Integrar herramientas de code quality (SonarQube, ESLint, etc.)",
+      "Configurar análisis de cobertura de código",
+      "Crear workflow de deployment automático a staging",
+      "Implementar estrategia de deployment blue-green o canary",
+      "Configurar health checks post-deployment",
+      "Desarrollar scripts de rollback automático",
+      "Integrar notificaciones con Slack/Teams",
+      "Crear workflow de release con changelog automático",
+      "Implementar semantic versioning automático",
+      "Documentar procesos y mejores prácticas",
+      "Capacitar al equipo en nuevos workflows"
+    ],
+    "story_points": "13",
+    "estimacion": "28h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 145,
+    "title": "[US071] Tests de carga y performance",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/145",
+    "created_at": "2025-11-06T18:27:51+00:00",
+    "closed_at": "2025-11-06T19:10:57+00:00",
+    "labels": [
+      "bug",
+      "documentation",
+      "sprint-5",
+      "integration",
+      "analytics",
+      "dashboard",
+      "medium"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📝 User Story\nComo Arquitecto de Sistema quiero realizar pruebas de carga y análisis de performance para garantizar que el sistema soporte la carga esperada y mantener tiempos de respuesta óptimos\n\n✅ Acceptance Criteria\n\n- [ ] Tests de carga para escenarios de uso pico (horario de entrada/salida)\n- [ ] Simulación de carga concurrente (mínimo 500 usuarios simultáneos)\n- [ ] Tiempo de respuesta promedio < 200ms para operaciones críticas\n- [ ] Tasa de éxito > 99.5% bajo carga normal\n- [ ] Identificación de cuellos de botella\n- [ ] Reporte de métricas de performance (latencia P50, P95, P99)\n- [ ] Tests de stress para identificar punto de quiebre\n- [ ] Pruebas de resistencia (soak tests) de 24 horas\n- [ ] Plan de optimización basado en resultados\n\n📋 Tasks\n\n- [ ] Definir escenarios de prueba realistas (check-in masivo, consultas, reportes)\n- [ ] Configurar herramientas de testing (JMeter, K6, Gatling, Locust)\n- [ ] Crear scripts de pruebas de carga\n- [ ] Configurar ambiente de staging con datos representativos\n- [ ] Ejecutar tests de carga incremental\n- [ ] Realizar tests de stress y soak\n- [ ] Monitorear métricas durante pruebas (CPU, memoria, DB)\n- [ ] Analizar resultados e identificar bottlenecks\n- [ ] Documentar hallazgos y recomendaciones\n- [ ] Implementar optimizaciones críticas\n- [ ] Re-ejecutar tests para validar mejoras\n\nStory Points: 8\nEstimación: 16h\nPrioridad: Media\nResponsable: QA Engineer / Performance Engineer\nDependencies: Sistema desplegado en staging, US061 (monitoreo)",
+    "user_story": "Como Arquitecto de Sistema quiero realizar pruebas de carga y análisis de performance para garantizar que el sistema soporte la carga esperada y mantener tiempos de respuesta óptimos\n\n✅",
+    "acceptance_criteria": [
+      "Tests de carga para escenarios de uso pico (horario de entrada/salida)",
+      "Simulación de carga concurrente (mínimo 500 usuarios simultáneos)",
+      "Tiempo de respuesta promedio < 200ms para operaciones críticas",
+      "Tasa de éxito > 99.5% bajo carga normal",
+      "Identificación de cuellos de botella",
+      "Reporte de métricas de performance (latencia P50, P95, P99)",
+      "Tests de stress para identificar punto de quiebre",
+      "Pruebas de resistencia (soak tests) de 24 horas",
+      "Plan de optimización basado en resultados"
+    ],
+    "tasks": [
+      "Definir escenarios de prueba realistas (check-in masivo, consultas, reportes)",
+      "Configurar herramientas de testing (JMeter, K6, Gatling, Locust)",
+      "Crear scripts de pruebas de carga",
+      "Configurar ambiente de staging con datos representativos",
+      "Ejecutar tests de carga incremental",
+      "Realizar tests de stress y soak",
+      "Monitorear métricas durante pruebas (CPU, memoria, DB)",
+      "Analizar resultados e identificar bottlenecks",
+      "Documentar hallazgos y recomendaciones",
+      "Implementar optimizaciones críticas",
+      "Re-ejecutar tests para validar mejoras"
+    ],
+    "story_points": "8",
+    "estimacion": "16h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 144,
+    "title": "[US070] Documentación API completa",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/144",
+    "created_at": "2025-11-06T18:26:06+00:00",
+    "closed_at": "2025-11-07T00:19:01+00:00",
+    "labels": [
+      "documentation",
+      "authentication",
+      "sprint-5",
+      "reporting",
+      "real-time",
+      "medium"
+    ],
+    "assignees": [
+      "LunaJuarezJuan"
+    ],
+    "milestone": null,
+    "body": "📝 User Story\nComo Desarrollador Frontend/Mobile quiero documentación completa y actualizada de todas las APIs para integrarme eficientemente y reducir errores de implementación\n✅ Acceptance Criteria\n\n- [ ] Documentación OpenAPI/Swagger de todos los endpoints\n- [ ] Descripción clara de cada endpoint (propósito, parámetros, respuestas)\n- [ ] Ejemplos de requests y responses para cada endpoint\n- [ ] Códigos de error documentados con significado\n- [ ] Documentación de modelos de datos y esquemas\n- [ ] Guía de autenticación y autorización\n- [ ] Ejemplos de flujos completos (onboarding, check-in, etc.)\n- [ ] Sandbox/ambiente de pruebas disponible\n- [ ] Versionado de API documentado\n- [ ] Changelog de cambios entre versiones\n\n📋 Tasks\n\n- [ ] Generar documentación OpenAPI automática desde código\n- [ ] Completar anotaciones/decoradores en endpoints\n- [ ] Escribir descripciones detalladas de cada endpoint\n- [ ] Crear ejemplos realistas de uso\n- [ ] Documentar todos los códigos de error\n- [ ] Desarrollar guía de inicio rápido (Quick Start)\n- [ ] Crear colección de Postman/Insomnia\n- [ ] Configurar entorno de sandbox con datos de prueba\n- [ ] Publicar documentación en portal accesible\n- [ ] Establecer proceso de actualización continua\n\nStory Points: 5\nEstimación: 12h\nPrioridad: Media\nResponsable: Backend Developer / Technical Writer\nDependencies: APIs principales implementadas",
+    "user_story": "Como Desarrollador Frontend/Mobile quiero documentación completa y actualizada de todas las APIs para integrarme eficientemente y reducir errores de implementación\n✅",
+    "acceptance_criteria": [
+      "Documentación OpenAPI/Swagger de todos los endpoints",
+      "Descripción clara de cada endpoint (propósito, parámetros, respuestas)",
+      "Ejemplos de requests y responses para cada endpoint",
+      "Códigos de error documentados con significado",
+      "Documentación de modelos de datos y esquemas",
+      "Guía de autenticación y autorización",
+      "Ejemplos de flujos completos (onboarding, check-in, etc.)",
+      "Sandbox/ambiente de pruebas disponible",
+      "Versionado de API documentado",
+      "Changelog de cambios entre versiones"
+    ],
+    "tasks": [
+      "Generar documentación OpenAPI automática desde código",
+      "Completar anotaciones/decoradores en endpoints",
+      "Escribir descripciones detalladas de cada endpoint",
+      "Crear ejemplos realistas de uso",
+      "Documentar todos los códigos de error",
+      "Desarrollar guía de inicio rápido (Quick Start)",
+      "Crear colección de Postman/Insomnia",
+      "Configurar entorno de sandbox con datos de prueba",
+      "Publicar documentación en portal accesible",
+      "Establecer proceso de actualización continua"
+    ],
+    "story_points": "5",
+    "estimacion": "12h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 143,
+    "title": "[US069] Backup y recuperación automática",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/143",
+    "created_at": "2025-11-06T18:22:40+00:00",
+    "closed_at": "2025-11-06T21:08:52+00:00",
+    "labels": [
+      "documentation",
+      "sprint-5",
+      "dashboard",
+      "backend"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "📝 User Story\nComo Administrador del Sistema quiero backups automáticos y procedimientos de recuperación probados para garantizar continuidad del negocio y protección contra pérdida de datos\n✅ Acceptance Criteria\n\n- [ ] Backups automáticos diarios de base de datos\n- [ ] Backups incrementales cada 6 horas\n- [ ] Retención de backups: 7 diarios, 4 semanales, 3 mensuales\n- [ ] Almacenamiento de backups en ubicación separada/cloud\n- [ ] Encriptación de backups en reposo\n- [ ] Verificación automática de integridad de backups\n- [ ] Procedimiento documentado y probado de recuperación\n- [ ] Tiempo de recuperación objetivo (RTO) < 4 horas\n- [ ] Punto de recuperación objetivo (RPO) < 6 horas\n- [ ] Alertas si fallan backups\n\n📋 Tasks\n\n- [ ] Configurar sistema de backup automatizado (pg_dump, mysqldump, etc.)\n- [ ] Implementar backups incrementales\n- [ ] Configurar almacenamiento remoto (AWS S3, Azure Blob, etc.)\n- [ ] Implementar encriptación de backups\n- [ ] Crear scripts de verificación de integridad\n- [ ] Desarrollar procedimiento de restauración automatizado\n- [ ] Documentar runbook de recuperación ante desastres\n- [ ] Realizar pruebas de restauración en ambiente de staging\n- [ ] Configurar monitoreo y alertas de backups\n- [ ] Establecer política de retención y limpieza\n\nStory Points: 13\nEstimación: 24h\nPrioridad: Alta\nResponsable: DevOps Engineer / Database Administrator\nDependencies: Infraestructura de producción establecida",
+    "user_story": "Como Administrador del Sistema quiero backups automáticos y procedimientos de recuperación probados para garantizar continuidad del negocio y protección contra pérdida de datos\n✅",
+    "acceptance_criteria": [
+      "Backups automáticos diarios de base de datos",
+      "Backups incrementales cada 6 horas",
+      "Retención de backups: 7 diarios, 4 semanales, 3 mensuales",
+      "Almacenamiento de backups en ubicación separada/cloud",
+      "Encriptación de backups en reposo",
+      "Verificación automática de integridad de backups",
+      "Procedimiento documentado y probado de recuperación",
+      "Tiempo de recuperación objetivo (RTO) < 4 horas",
+      "Punto de recuperación objetivo (RPO) < 6 horas",
+      "Alertas si fallan backups"
+    ],
+    "tasks": [
+      "Configurar sistema de backup automatizado (pg_dump, mysqldump, etc.)",
+      "Implementar backups incrementales",
+      "Configurar almacenamiento remoto (AWS S3, Azure Blob, etc.)",
+      "Implementar encriptación de backups",
+      "Crear scripts de verificación de integridad",
+      "Desarrollar procedimiento de restauración automatizado",
+      "Documentar runbook de recuperación ante desastres",
+      "Realizar pruebas de restauración en ambiente de staging",
+      "Configurar monitoreo y alertas de backups",
+      "Establecer política de retención y limpieza"
+    ],
+    "story_points": "13",
+    "estimacion": "24h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 142,
+    "title": "[US068] — Auditoría y trazabilidad",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/142",
+    "created_at": "2025-11-06T18:21:30+00:00",
+    "closed_at": null,
+    "labels": [
+      "enhancement",
+      "sprint-5",
+      "integration",
+      "analytics",
+      "medium"
+    ],
+    "assignees": [
+      "Angelhc123"
+    ],
+    "milestone": null,
+    "body": "📝 User Story\nComo Administrador del Sistema quiero registrar todas las acciones críticas del sistema para garantizar trazabilidad completa, cumplir con normativas y facilitar investigación de incidentes\n\n✅ Acceptance Criteria\n\n- [ ] Registro de todas las operaciones CRUD sobre entidades críticas\n- [ ] Captura de quién, qué, cuándo y desde dónde se realizó cada acción\n- [ ] Log de accesos y cambios en información de estudiantes\n- [ ] Registro de eventos de entrada/salida con timestamps\n- [ ] Historial de asociaciones y desasociaciones de pulseras\n- [ ] Sistema de consulta y filtrado de logs de auditoría\n- [ ] Retención de logs según política de compliance (mínimo 1 año)\n- [ ] Logs inmutables o protegidos contra modificación\n\n📋 Tasks\n\n- [ ] Diseñar esquema de base de datos para audit logs\n- [ ] Implementar interceptores/middleware para captura automática\n- [ ] Crear servicio de auditoría centralizado\n- [ ] Desarrollar API de consulta de logs de auditoría\n- [ ] Implementar filtros por usuario, entidad, fecha, tipo de acción\n- [ ] Crear interfaz de consulta para administradores\n- [ ] Configurar rotación y archivado de logs antiguos\n- [ ] Documentar eventos auditables y formato de logs\n\nStory Points: 10\nEstimación: 20h\nPrioridad: Media\nResponsable: Backend Developer Senior\nDependencies: Autenticación y autorización implementadas",
+    "user_story": "Como Administrador del Sistema quiero registrar todas las acciones críticas del sistema para garantizar trazabilidad completa, cumplir con normativas y facilitar investigación de incidentes\n\n✅",
+    "acceptance_criteria": [
+      "Registro de todas las operaciones CRUD sobre entidades críticas",
+      "Captura de quién, qué, cuándo y desde dónde se realizó cada acción",
+      "Log de accesos y cambios en información de estudiantes",
+      "Registro de eventos de entrada/salida con timestamps",
+      "Historial de asociaciones y desasociaciones de pulseras",
+      "Sistema de consulta y filtrado de logs de auditoría",
+      "Retención de logs según política de compliance (mínimo 1 año)",
+      "Logs inmutables o protegidos contra modificación"
+    ],
+    "tasks": [
+      "Diseñar esquema de base de datos para audit logs",
+      "Implementar interceptores/middleware para captura automática",
+      "Crear servicio de auditoría centralizado",
+      "Desarrollar API de consulta de logs de auditoría",
+      "Implementar filtros por usuario, entidad, fecha, tipo de acción",
+      "Crear interfaz de consulta para administradores",
+      "Configurar rotación y archivado de logs antiguos",
+      "Documentar eventos auditables y formato de logs"
+    ],
+    "story_points": "10",
+    "estimacion": "20h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 141,
+    "title": "[US067] - Monitoreo de Salud del Sistema",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/141",
+    "created_at": "2025-11-06T18:15:26+00:00",
+    "closed_at": "2025-11-06T18:54:01+00:00",
+    "labels": [
+      "bug",
+      "sprint-5",
+      "integration",
+      "analytics",
+      "high",
+      "backend"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "Como Administrador\nQuiero monitorear la salud del sistema en tiempo real\nPara detectar problemas antes de que afecten a usuarios\n\nCriterios de Aceptación:\n\n- [ ] Dashboard de métricas de sistema (CPU, memoria, BD)\n- [ ] Alertas automáticas de problemas\n- [ ] Historial de incidentes\n- [ ] Métricas de performance de API\n\nTareas:\n\n- [ ] Endpoint GET /health/detailed\n- [ ] Métricas de sistema (usando os, process)\n- [ ] Métricas de BD (conexiones, queries lentas)\n- [ ] Dashboard de salud\n- [ ] Alertas configurables\n- [ ] Tests de health checks\n\nEstimación: 16 horas\nPrioridad: Alta\nStory Points: 5",
+    "user_story": "",
+    "acceptance_criteria": [],
+    "tasks": [],
+    "story_points": "5",
+    "estimacion": "16 horas",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 113,
+    "title": "[US066]Beta testing con usuarios reales",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/113",
+    "created_at": "2025-11-04T20:44:10+00:00",
+    "closed_at": null,
+    "labels": [
+      "documentation",
+      "question",
+      "sprint-5",
+      "reporting"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "User Story\n---\nEjecutar beta testing con usuarios reales para validar UX, rendimiento y detectar regresiones en condiciones reales.\n\nAcceptance Criteria\n\n- [ ] Programa de beta con cohortes definidos y objetivos de feedback.\n- [ ] Captura de métricas y errores de los testers (telemetría habilitada).\n- [ ] Recolección y priorización de feedback/bugs en staging antes de release.\n- [ ] Documentación del plan, reclutamiento y criterios de éxito.\n\nTasks\n---\n\n- [ ] Diseñar plan de beta (duración, cohortes, objetivos).\n- [ ] Preparar builds (Play Store alpha/beta, TestFlight) y onboarding.\n- [ ] Instrumentar telemetría y formularios de feedback in-app.\n- [ ] Ejecutar beta, recopilar datos y generar informe con acciones.\n- [ ] Cerrar ciclo con fixes y revalidación en staging.\n\n**Story Points:** 3  \n**Estimación:** 8-12h (coordinación inicial; ejecución puede extenderse)  \n**Prioridad:** Media  \n**Dependencias:** Acceso a stores/platforms; builds estables; infra de telemetría",
+    "user_story": "---\nEjecutar beta testing con usuarios reales para validar UX, rendimiento y detectar regresiones en condiciones reales.",
+    "acceptance_criteria": [
+      "Programa de beta con cohortes definidos y objetivos de feedback.",
+      "Captura de métricas y errores de los testers (telemetría habilitada).",
+      "Recolección y priorización de feedback/bugs en staging antes de release.",
+      "Documentación del plan, reclutamiento y criterios de éxito."
+    ],
+    "tasks": [
+      "Diseñar plan de beta (duración, cohortes, objetivos).",
+      "Preparar builds (Play Store alpha/beta, TestFlight) y onboarding.",
+      "Instrumentar telemetría y formularios de feedback in-app.",
+      "Ejecutar beta, recopilar datos y generar informe con acciones.",
+      "Cerrar ciclo con fixes y revalidación en staging."
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 8-12h (coordinación inicial; ejecución puede extenderse)",
+    "prioridad": "** Media",
+    "dependencias": "** Acceso a stores/platforms; builds estables; infra de telemetría"
+  },
+  {
+    "number": 112,
+    "title": "[US065]Configurar monitoreo y alertas mobile",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/112",
+    "created_at": "2025-11-04T20:41:59+00:00",
+    "closed_at": "2025-11-06T20:41:34+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4",
+      "integration",
+      "analytics",
+      "security",
+      "high"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "User Story\n---\nConfigurar monitoreo y alertas básicas para la app mobile en staging (crashes, latencia, errores críticos).\n\nAcceptance Criteria\n\n- [ ] Métricas clave (crashes, ANR, latencia, error rate) reportadas a sistema de monitoring.\n- [ ] Alertas mínimas configuradas (p.ej. aumento de crash rate, error rate > umbral).\n- [ ] Pruebas que disparen alertas en staging y validen notificaciones.\n- [ ] Dashboard básico disponible para el equipo.\n\nTasks\n---\n\n- [ ] Seleccionar tool (Sentry/Firebase Crashlytics + Datadog/Prometheus).\n- [ ] Instrumentar SDKs en app y backend para métricas y errores.\n- [ ] Definir umbrales de alerta y configurar notificaciones (Slack/Email).\n- [ ] Ejecutar pruebas que simulen condiciones para disparar alertas.\n- [ ] Documentar dashboards y procedimientos de respuesta.\n\nStory Points: 5  \nEstimación: 10-16h  \nPrioridad: Alta  \nDependencias: Infraestructura de monitoring; acceso a canales de notificación",
+    "user_story": "---\nConfigurar monitoreo y alertas básicas para la app mobile en staging (crashes, latencia, errores críticos).",
+    "acceptance_criteria": [
+      "Métricas clave (crashes, ANR, latencia, error rate) reportadas a sistema de monitoring.",
+      "Alertas mínimas configuradas (p.ej. aumento de crash rate, error rate > umbral).",
+      "Pruebas que disparen alertas en staging y validen notificaciones.",
+      "Dashboard básico disponible para el equipo."
+    ],
+    "tasks": [
+      "Seleccionar tool (Sentry/Firebase Crashlytics + Datadog/Prometheus).",
+      "Instrumentar SDKs en app y backend para métricas y errores.",
+      "Definir umbrales de alerta y configurar notificaciones (Slack/Email).",
+      "Ejecutar pruebas que simulen condiciones para disparar alertas.",
+      "Documentar dashboards y procedimientos de respuesta."
+    ],
+    "story_points": "5",
+    "estimacion": "10-16h",
+    "prioridad": "Alta",
+    "dependencias": "Infraestructura de monitoring; acceso a canales de notificación"
+  },
+  {
+    "number": 110,
+    "title": "[US064]Implementar logging centralizado",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/110",
+    "created_at": "2025-11-04T20:40:06+00:00",
+    "closed_at": "2025-11-06T18:00:05+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4",
+      "integration",
+      "analytics",
+      "high",
+      "backend"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "User Story\n---\nImplementar logging centralizado para facilitar debugging y correlación entre mobile y backend.\n\nAcceptance Criteria\n\n- [ ] Logs estructurados (JSON) enviados a solución central (ELK/Datadog/Cloud Logging).\n- [ ] Correlación request-id entre mobile y backend disponible.\n- [ ] Pruebas E2E validan que eventos críticos generen logs en el sistema central.\n- [ ] Retención y acceso básico configurados para staging.\n\nTasks\n---\n\n- [ ] Seleccionar stack (ELK/Datadog/Cloud) y agregar SDKs/agents.\n- [ ] Establecer formato estructurado y request-id propagation.\n- [ ] Instrumentar logs en mobile y backend para eventos críticos.\n- [ ] Crear pruebas que verifiquen aparición de logs en staging.\n- [ ] Documentar acceso y queries útiles en TESTING.md.\n\nStory Points: 5  \nEstimación: 12-20h  \nPrioridad: Alta  \nDependencias: Infraestructura de logging; credenciales de staging",
+    "user_story": "---\nImplementar logging centralizado para facilitar debugging y correlación entre mobile y backend.",
+    "acceptance_criteria": [
+      "Logs estructurados (JSON) enviados a solución central (ELK/Datadog/Cloud Logging).",
+      "Correlación request-id entre mobile y backend disponible.",
+      "Pruebas E2E validan que eventos críticos generen logs en el sistema central.",
+      "Retención y acceso básico configurados para staging."
+    ],
+    "tasks": [
+      "Seleccionar stack (ELK/Datadog/Cloud) y agregar SDKs/agents.",
+      "Establecer formato estructurado y request-id propagation.",
+      "Instrumentar logs en mobile y backend para eventos críticos.",
+      "Crear pruebas que verifiquen aparición de logs en staging.",
+      "Documentar acceso y queries útiles en TESTING.md."
+    ],
+    "story_points": "5",
+    "estimacion": "12-20h",
+    "prioridad": "Alta",
+    "dependencias": "Infraestructura de logging; credenciales de staging"
+  },
+  {
+    "number": 109,
+    "title": "[US063]Optimizar tamaño APK",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/109",
+    "created_at": "2025-11-04T20:38:22+00:00",
+    "closed_at": null,
+    "labels": [
+      "enhancement",
+      "sprint-4",
+      "offline-support",
+      "medium"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "User Story\n---\nReducir tamaño del APK para mejorar instalación y rendimiento en dispositivos reales sin romper flujos críticos.\n\nAcceptance Criteria\n\n- [ ] APK reducido respecto a baseline (objetivo % o MB definido).\n- [ ] App optimizada pasa todos los tests E2E críticos en staging.\n- [ ] Build reproducible y documentado (ProGuard/R8, split APKs, resource shrinking).\n- [ ] CI produce APK optimizado en artifact store.\n\nTasks\n---\n\n- [ ] Analizar tamaño actual (bundle analyzer).\n- [ ] Configurar R8/ProGuard, resource shrinking y split APKs por ABI.\n- [ ] Eliminar assets innecesarios y revisar dependencias.\n- [ ] Ejecutar tests E2E en staging con APK optimizado.\n- [ ] Documentar proceso de build y comandos en TESTING.md.\n\nStory Points: 5\nEstimación: 12-16h \nPrioridad: Media - Alta\nDependencias: Pipeline de builds; acceso a dispositivos/emuladores en CI",
+    "user_story": "---\nReducir tamaño del APK para mejorar instalación y rendimiento en dispositivos reales sin romper flujos críticos.",
+    "acceptance_criteria": [
+      "APK reducido respecto a baseline (objetivo % o MB definido).",
+      "App optimizada pasa todos los tests E2E críticos en staging.",
+      "Build reproducible y documentado (ProGuard/R8, split APKs, resource shrinking).",
+      "CI produce APK optimizado en artifact store."
+    ],
+    "tasks": [
+      "Analizar tamaño actual (bundle analyzer).",
+      "Configurar R8/ProGuard, resource shrinking y split APKs por ABI.",
+      "Eliminar assets innecesarios y revisar dependencias.",
+      "Ejecutar tests E2E en staging con APK optimizado.",
+      "Documentar proceso de build y comandos en TESTING.md."
+    ],
+    "story_points": "5",
+    "estimacion": "12-16h",
+    "prioridad": "Media - Alta",
+    "dependencias": "Pipeline de builds; acceso a dispositivos/emuladores en CI"
+  },
+  {
+    "number": 108,
+    "title": "[US062]Implementar rate limiting",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/108",
+    "created_at": "2025-11-04T20:37:10+00:00",
+    "closed_at": "2025-11-06T18:07:08+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "integration",
+      "security",
+      "high",
+      "backend"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "User Story\n---\nImplementar rate limiting para proteger endpoints críticos contra abuso y garantizar estabilidad.\n\nAcceptance Criteria\n\n- [ ] Rate limiting aplicado a endpoints críticos (login, auth, CRUD usuarios, métricas).\n- [ ] Respuestas controladas (HTTP 429) con headers explicativos (Retry-After).\n- [ ] Tests E2E y unitarios verifican comportamiento bajo límite.\n- [ ] Configuración configurable por entorno (staging/production).\n\nTasks\n---\n\n- [ ] Seleccionar e integrar solución (middleware: express-rate-limit, gateway o similar).\n- [ ] Definir políticas por endpoint y entorno.\n- [ ] Implementar mensajes y headers estándar para 429.\n- [ ] Crear tests que simulan exceder límites y validan respuesta.\n- [ ] Añadir configuración en infra/CI para staging.\n\nStory Points: 3\nEstimación: 8-12h \nPrioridad: Alta\nDependencias: Acceso a staging; [US068]Documentar API endpoints",
+    "user_story": "---\nImplementar rate limiting para proteger endpoints críticos contra abuso y garantizar estabilidad.",
+    "acceptance_criteria": [
+      "Rate limiting aplicado a endpoints críticos (login, auth, CRUD usuarios, métricas).",
+      "Respuestas controladas (HTTP 429) con headers explicativos (Retry-After).",
+      "Tests E2E y unitarios verifican comportamiento bajo límite.",
+      "Configuración configurable por entorno (staging/production)."
+    ],
+    "tasks": [
+      "Seleccionar e integrar solución (middleware: express-rate-limit, gateway o similar).",
+      "Definir políticas por endpoint y entorno.",
+      "Implementar mensajes y headers estándar para 429.",
+      "Crear tests que simulan exceder límites y validan respuesta.",
+      "Añadir configuración en infra/CI para staging."
+    ],
+    "story_points": "3",
+    "estimacion": "8-12h",
+    "prioridad": "Alta",
+    "dependencias": "Acceso a staging; [US068]Documentar API endpoints"
+  },
+  {
+    "number": 107,
+    "title": "[US061]Optimizar consultas MongoDB",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/107",
+    "created_at": "2025-11-04T20:35:40+00:00",
+    "closed_at": "2025-11-06T21:12:05+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-3",
+      "integration",
+      "high",
+      "backend"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "User Story\n---\nComo UX Designer quiero validar que la interfaz mobile cumple con estándares de usabilidad y accesibilidad para garantizar una buena experiencia de usuario.\n\nAcceptance Criteria\n\n- [ ] Consultas críticas tienen índices adecuados y tiempos de respuesta mejorados (baseline vs nueva).\n- [ ] No se introducen regresiones funcionales en endpoints críticos.\n- [ ] Tests de integración y de rendimiento automatizados validan cambios en staging.\n- [ ] Documentación de cambios en queries/indexes incluida en TESTING.md o DB_README.md.\n\nTasks\n---\n\n- [ ] Identificar consultas críticas y crear baseline de rendimiento.\n- [ ] Añadir/ajustar índices y reescribir queries problemáticas.\n- [ ] Escribir tests automatizados (integration + smoke + simple perf) para staging.\n- [ ] Ejecutar pruebas de carga leve y comparar métricas.\n- [ ] Documentar cambios e impactos.\n\nStory Points: 5 \nEstimación: 10-12h \nPrioridad: Alta\nDependencias:  [US068]Documentar API endpoints; Acceso a staging DB",
+    "user_story": "---\nComo UX Designer quiero validar que la interfaz mobile cumple con estándares de usabilidad y accesibilidad para garantizar una buena experiencia de usuario.",
+    "acceptance_criteria": [
+      "Consultas críticas tienen índices adecuados y tiempos de respuesta mejorados (baseline vs nueva).",
+      "No se introducen regresiones funcionales en endpoints críticos.",
+      "Tests de integración y de rendimiento automatizados validan cambios en staging.",
+      "Documentación de cambios en queries/indexes incluida en TESTING.md o DB_README.md."
+    ],
+    "tasks": [
+      "Identificar consultas críticas y crear baseline de rendimiento.",
+      "Añadir/ajustar índices y reescribir queries problemáticas.",
+      "Escribir tests automatizados (integration + smoke + simple perf) para staging.",
+      "Ejecutar pruebas de carga leve y comparar métricas.",
+      "Documentar cambios e impactos."
+    ],
+    "story_points": "5",
+    "estimacion": "10-12h",
+    "prioridad": "Alta",
+    "dependencias": "[US068]Documentar API endpoints; Acceso a staging DB"
+  },
+  {
+    "number": 106,
+    "title": "[US071]Testing de UI/UX en Frontend Mobile",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/106",
+    "created_at": "2025-11-04T01:27:50+00:00",
+    "closed_at": "2025-11-04T21:11:52+00:00",
+    "labels": [
+      "documentation",
+      "sprint-5",
+      "dashboard",
+      "real-time",
+      "medium"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "User Story\n---\nComo UX Designer quiero validar que la interfaz mobile cumple con estándares de usabilidad y accesibilidad para garantizar una buena experiencia de usuario.\n\nAcceptance Criteria\n\n- [ ] Tests de accesibilidad automatizados (contraste, tamaños, labels)\n- [ ] Pruebas de usabilidad en dispositivos Android de diferentes tamaños\n- [ ] Verificación de tiempos de respuesta visual (<300ms para interacciones)\n- [ ] Tests de navegación y flujos principales sin errores\n- [ ] Cumplimiento de guías Material Design / iOS Human Interface\n\nTasks\n---\n\n- [ ] Configurar herramienta de testing de accesibilidad (Accessibility Scanner, axe)\n- [ ] Realizar pruebas manuales en dispositivos físicos (3+ tamaños diferentes)\n- [ ] Implementar tests automatizados de componentes UI con Jest/Testing Library\n- [ ] Medir y optimizar tiempos de respuesta de interacciones\n- [ ] Documentar hallazgos y crear tickets para mejoras identificadas\n- [ ] Validar cumplimiento de guías de diseño con checklist\n\nStory Points: 5 \nEstimación: 10-12h \nPrioridad: Media \nDependencias: Ninguna",
+    "user_story": "---\nComo UX Designer quiero validar que la interfaz mobile cumple con estándares de usabilidad y accesibilidad para garantizar una buena experiencia de usuario.",
+    "acceptance_criteria": [
+      "Tests de accesibilidad automatizados (contraste, tamaños, labels)",
+      "Pruebas de usabilidad en dispositivos Android de diferentes tamaños",
+      "Verificación de tiempos de respuesta visual (<300ms para interacciones)",
+      "Tests de navegación y flujos principales sin errores",
+      "Cumplimiento de guías Material Design / iOS Human Interface"
+    ],
+    "tasks": [
+      "Configurar herramienta de testing de accesibilidad (Accessibility Scanner, axe)",
+      "Realizar pruebas manuales en dispositivos físicos (3+ tamaños diferentes)",
+      "Implementar tests automatizados de componentes UI con Jest/Testing Library",
+      "Medir y optimizar tiempos de respuesta de interacciones",
+      "Documentar hallazgos y crear tickets para mejoras identificadas",
+      "Validar cumplimiento de guías de diseño con checklist"
+    ],
+    "story_points": "5",
+    "estimacion": "10-12h",
+    "prioridad": "Media",
+    "dependencias": "Ninguna"
+  },
+  {
+    "number": 105,
+    "title": "[US70]Testing de Integración Backend-Frontend",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/105",
+    "created_at": "2025-11-04T01:10:06+00:00",
+    "closed_at": "2025-11-04T21:02:14+00:00",
+    "labels": [
+      "documentation",
+      "sprint-5",
+      "security",
+      "backend"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "User Story\n---\nComo QA Engineer quiero tests de integración end-to-end para verificar que el backend y frontend mobile funcionan correctamente juntos.\nAcceptance Criteria\n\n- [ ] Suite de tests E2E que cubra flujos críticos (login, CRUD usuarios, dashboard)\n- [ ] Tests ejecutándose contra ambiente de staging antes de producción\n- [ ] Verificación de contratos API (request/response esperados)\n- [ ] Tests automatizados en CI con reporte de resultados\n- [ ] Documentación de cómo ejecutar tests localmente\n\nTasks\n---\n\n- [ ] Configurar framework de testing E2E (Detox para mobile, Supertest para API)\n- [ ] Escribir tests para flujos: autenticación, gestión de usuarios, consulta de métricas\n- [ ] Implementar contract testing (Pact o validación de schemas)\n- [ ] Configurar ambiente de staging para tests automáticos\n- [ ] Integrar suite E2E en pipeline CI/CD\n- [ ] Documentar setup y ejecución en TESTING.md\n\nStory Points: 8 \nEstimación: 16-20h \nPrioridad: Alta \nDependencias: [US068]Documentar API endpoints",
+    "user_story": "---\nComo QA Engineer quiero tests de integración end-to-end para verificar que el backend y frontend mobile funcionan correctamente juntos.",
+    "acceptance_criteria": [
+      "Suite de tests E2E que cubra flujos críticos (login, CRUD usuarios, dashboard)",
+      "Tests ejecutándose contra ambiente de staging antes de producción",
+      "Verificación de contratos API (request/response esperados)",
+      "Tests automatizados en CI con reporte de resultados",
+      "Documentación de cómo ejecutar tests localmente"
+    ],
+    "tasks": [
+      "Configurar framework de testing E2E (Detox para mobile, Supertest para API)",
+      "Escribir tests para flujos: autenticación, gestión de usuarios, consulta de métricas",
+      "Implementar contract testing (Pact o validación de schemas)",
+      "Configurar ambiente de staging para tests automáticos",
+      "Integrar suite E2E en pipeline CI/CD",
+      "Documentar setup y ejecución en TESTING.md"
+    ],
+    "story_points": "8",
+    "estimacion": "16-20h",
+    "prioridad": "Alta",
+    "dependencias": "[US068]Documentar API endpoints"
+  },
+  {
+    "number": 104,
+    "title": "[US069]Mejorar Tests Unitarios",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/104",
+    "created_at": "2025-11-04T01:06:57+00:00",
+    "closed_at": "2025-11-04T20:48:48+00:00",
+    "labels": [
+      "documentation",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "User Story\nComo Desarrollador quiero aumentar la cobertura y calidad de los tests unitarios para detectar bugs tempranamente y facilitar refactorizaciones seguras.Acceptance Criteria\n\n- [ ] Cobertura de código ≥80% en backend y ≥75% en frontend mobile\n- [ ] Tests unitarios para casos edge y manejo de errores\n- [ ] Mocks configurados para dependencias externas (MongoDB, APIs)\n- [ ] Tests ejecutándose automáticamente en CI/CD\n- [ ] Reporte de cobertura generado y accesible en cada build\n- [ ] Tasks\n\n- [ ] Auditar cobertura actual con herramientas (jest --coverage, nyc)\n- [ ] Identificar módulos críticos sin tests adecuados\n- [ ] Escribir tests para funciones de negocio, validaciones y utilidades\n- [ ] Configurar mocks para llamadas a base de datos y servicios externos\n- [ ] Integrar reporte de cobertura en pipeline CI\n- [ ] Establecer umbral mínimo que bloquee merges si no se cumple\n\nStory Points: 5 | Estimación: 10-12h | Prioridad: Alta | Dependencias: Ninguna",
+    "user_story": "Como Desarrollador quiero aumentar la cobertura y calidad de los tests unitarios para detectar bugs tempranamente y facilitar refactorizaciones seguras.",
+    "acceptance_criteria": [
+      "Cobertura de código ≥80% en backend y ≥75% en frontend mobile",
+      "Tests unitarios para casos edge y manejo de errores",
+      "Mocks configurados para dependencias externas (MongoDB, APIs)",
+      "Tests ejecutándose automáticamente en CI/CD",
+      "Reporte de cobertura generado y accesible en cada build"
+    ],
+    "tasks": [
+      "Auditar cobertura actual con herramientas (jest --coverage, nyc)",
+      "Identificar módulos críticos sin tests adecuados",
+      "Escribir tests para funciones de negocio, validaciones y utilidades",
+      "Configurar mocks para llamadas a base de datos y servicios externos",
+      "Integrar reporte de cobertura en pipeline CI",
+      "Establecer umbral mínimo que bloquee merges si no se cumple"
+    ],
+    "story_points": "5 | Estimación: 10-12h | Prioridad: Alta | Dependencias: Ninguna",
+    "estimacion": "10-12h | Prioridad: Alta | Dependencias: Ninguna",
+    "prioridad": "Alta | Dependencias: Ninguna",
+    "dependencias": "Ninguna"
+  },
+  {
+    "number": 103,
+    "title": "[US068]Documentar API endpoints",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/103",
+    "created_at": "2025-10-30T20:34:52+00:00",
+    "closed_at": "2025-11-04T20:51:12+00:00",
+    "labels": [
+      "documentation",
+      "sprint-5",
+      "backend",
+      "medium"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## User Story\nComo Desarrollador quiero contar con documentación Swagger/OpenAPI para entender y probar fácilmente los endpoints de la API.\n\n## Acceptance Criteria\n- [x] `/api-docs` disponible con Swagger UI\n- [x] Esquema OpenAPI 3.0 válido con `bearerAuth (JWT)`\n- [x] Endpoints documentados: `POST /login`, `GET/POST/PUT /usuarios`, `GET /dashboard/metrics`\n- [x] Ejemplos de request/response y códigos de estado comunes\n- [x] Verificación en CI que alerta si la documentación queda desactualizada\n\n## Tasks\n- [x] Configurar `swagger-jsdoc` y `swagger-ui-express`\n- [x] Añadir anotaciones OpenAPI a endpoints clave\n- [x] Incluir ejemplos y descripciones de parámetros\n- [x] Integrar verificación en CI (paso que falla si cambia `API.md`)\n- [x] Enlazar `/api-docs` desde `README.md`\n\nStory Points: 3  \nEstimación: 6h  \nPrioridad: Media  \nDependencias: [SEC] Revisar JWT (para definir `bearerAuth`)",
+    "user_story": "Como Desarrollador quiero contar con documentación Swagger/OpenAPI para entender y probar fácilmente los endpoints de la API.\n\n##",
+    "acceptance_criteria": [
+      "`/api-docs` disponible con Swagger UI",
+      "Esquema OpenAPI 3.0 válido con `bearerAuth (JWT)`",
+      "Endpoints documentados: `POST /login`, `GET/POST/PUT /usuarios`, `GET /dashboard/metrics`",
+      "Ejemplos de request/response y códigos de estado comunes",
+      "Verificación en CI que alerta si la documentación queda desactualizada"
+    ],
+    "tasks": [
+      "Configurar `swagger-jsdoc` y `swagger-ui-express`",
+      "Añadir anotaciones OpenAPI a endpoints clave",
+      "Incluir ejemplos y descripciones de parámetros",
+      "Integrar verificación en CI (paso que falla si cambia `API.md`)",
+      "Enlazar `/api-docs` desde `README.md`"
+    ],
+    "story_points": "3",
+    "estimacion": "6h",
+    "prioridad": "Media",
+    "dependencias": "[SEC] Revisar JWT (para definir `bearerAuth`)"
+  },
+  {
+    "number": 102,
+    "title": "[US067]Auditoría de seguridad",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/102",
+    "created_at": "2025-10-30T20:33:15+00:00",
+    "closed_at": "2025-11-04T20:51:56+00:00",
+    "labels": [
+      "sprint-5",
+      "security",
+      "high",
+      "backend"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## User Story\nComo Admin quiero asegurar la autenticación y la validación de datos para reducir riesgos y accesos no autorizados.\n\n## Acceptance Criteria\n- [x] JWT emitido y verificado con expiración y algoritmo seguro\n- [x] Contraseñas hasheadas con bcrypt y sal adecuada\n- [x] Validación de inputs en login/usuarios/asistencias con errores claros\n- [x] Helmet y rate limiting aplicados a endpoints sensibles\n- [x] Evidencias en PR (pruebas, logs) y checklist OWASP básico\n\n## Tasks\n- [x] Implementar middleware `authenticateToken` y generación de token\n- [x] Validar `email/password` en `/login` y campos en `/usuarios`\n- [x] Añadir `helmet` y `express-rate-limit` (p.ej. en `/login`)\n- [x] Revisar respuestas de error para no filtrar información sensible\n- [x] Documentar riesgos y mitigaciones encontradas\n\nStory Points: 5  \nEstimación: 10h  \nPrioridad: Alta  \nDependencias: —",
+    "user_story": "Como Admin quiero asegurar la autenticación y la validación de datos para reducir riesgos y accesos no autorizados.\n\n##",
+    "acceptance_criteria": [
+      "JWT emitido y verificado con expiración y algoritmo seguro",
+      "Contraseñas hasheadas con bcrypt y sal adecuada",
+      "Validación de inputs en login/usuarios/asistencias con errores claros",
+      "Helmet y rate limiting aplicados a endpoints sensibles",
+      "Evidencias en PR (pruebas, logs) y checklist OWASP básico"
+    ],
+    "tasks": [
+      "Implementar middleware `authenticateToken` y generación de token",
+      "Validar `email/password` en `/login` y campos en `/usuarios`",
+      "Añadir `helmet` y `express-rate-limit` (p.ej. en `/login`)",
+      "Revisar respuestas de error para no filtrar información sensible",
+      "Documentar riesgos y mitigaciones encontradas"
+    ],
+    "story_points": "5",
+    "estimacion": "10h",
+    "prioridad": "Alta",
+    "dependencias": "—"
+  },
+  {
+    "number": 63,
+    "title": "[US052] Horarios pico ML - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/63",
+    "created_at": "2025-09-02T21:43:28+00:00",
+    "closed_at": "2025-10-30T18:07:32+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver reporte de horarios pico por ML para validar predicciones del modelo\n✅ Acceptance Criteria\n\n- [ ]  Comparación ML vs real disponible\n- [x]  Precisión por horario calculada\n- [x]  Ajustes sugeridos generados\n\n📝 Tasks\n\n- [ ]  Modelo ML validado\n- [ ]  Comparación ML vs real\n- [x]  Métricas precisión por horario\n- [x]  Generador ajustes sugeridos\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Alta\nResponsable: ML Engineer\nDependencies: US048",
+    "user_story": "Como Administrador quiero ver reporte de horarios pico por ML para validar predicciones del modelo\n✅",
+    "acceptance_criteria": [
+      "Comparación ML vs real disponible",
+      "Precisión por horario calculada",
+      "Ajustes sugeridos generados"
+    ],
+    "tasks": [
+      "Modelo ML validado",
+      "Comparación ML vs real",
+      "Métricas precisión por horario",
+      "Generador ajustes sugeridos"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 62,
+    "title": "[US060] Actualizaciones tiempo real - 13pts",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/62",
+    "created_at": "2025-09-02T21:42:06+00:00",
+    "closed_at": null,
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "📋 User Story\nComo Usuario quiero recibir actualizaciones tiempo real entre app y web para información siempre actualizada\n✅ Acceptance Criteria\n\n- [ ]  WebSockets o polling implementado\n- [ ]  Notificaciones push configuradas\n- [ ]  Latencia <2s garantizada\n\n📝 Tasks\n\n- [ ]  Sistema notificaciones\n- [ ]  WebSockets/polling tiempo real\n- [ ]  Notificaciones push\n- [ ]  Optimización latencia <2s\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Alta\nResponsable: Full Stack Engineer\nDependencies: US058",
+    "user_story": "Como Usuario quiero recibir actualizaciones tiempo real entre app y web para información siempre actualizada\n✅",
+    "acceptance_criteria": [
+      "WebSockets o polling implementado",
+      "Notificaciones push configuradas",
+      "Latencia <2s garantizada"
+    ],
+    "tasks": [
+      "Sistema notificaciones",
+      "WebSockets/polling tiempo real",
+      "Notificaciones push",
+      "Optimización latencia <2s"
+    ],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 61,
+    "title": "[US058] Web y app mismo servidor - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/61",
+    "created_at": "2025-09-02T21:34:52+00:00",
+    "closed_at": "2025-11-06T17:48:16+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero que web y app consuman mismo servidor para mantener consistencia datos\n✅ Acceptance Criteria\n\n- [ ]  API unificada implementada\n- [ ]  Misma BD utilizada\n- [ ]  Endpoints compatibles configurados\n\n📝 Tasks\n\n- [ ] API centralizada\n- [ ]  Unificación BD\n- [ ]  Endpoints compatibles\n- [ ]  Testing integración\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Crítica\nResponsable: Backend Engineer\nDependencies: US056",
+    "user_story": "Como Sistema quiero que web y app consuman mismo servidor para mantener consistencia datos\n✅",
+    "acceptance_criteria": [
+      "API unificada implementada",
+      "Misma BD utilizada",
+      "Endpoints compatibles configurados"
+    ],
+    "tasks": [
+      "API centralizada",
+      "Unificación BD",
+      "Endpoints compatibles",
+      "Testing integración"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 60,
+    "title": "[US057] Funcionalidad offline - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/60",
+    "created_at": "2025-09-02T21:33:52+00:00",
+    "closed_at": "2025-09-11T21:21:17+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "📋 User Story\nComo Guardia quiero usar app offline con sincronización posterior para trabajar sin conexión internet\n✅ Acceptance Criteria\n\n- [ ]  Cache local implementado\n- [ ]  Queue eventos offline funcional\n- [ ]  Sync automático al reconectar\n\n📝 Tasks\n\n- [ ]  Storage local app\n- [ ]  Cache local datos\n- [ ]  Queue eventos offline\n- [ ]  Sync automático reconexión\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Alta\nResponsable: Mobile Engineer\nDependencies: US056\n",
+    "user_story": "Como Guardia quiero usar app offline con sincronización posterior para trabajar sin conexión internet\n✅",
+    "acceptance_criteria": [
+      "Cache local implementado",
+      "Queue eventos offline funcional",
+      "Sync automático al reconectar"
+    ],
+    "tasks": [
+      "Storage local app",
+      "Cache local datos",
+      "Queue eventos offline",
+      "Sync automático reconexión"
+    ],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 59,
+    "title": "[US056] Sincronización app-servidor - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/59",
+    "created_at": "2025-09-02T21:33:21+00:00",
+    "closed_at": "2025-11-06T16:55:55+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero sincronizar app móvil con servidor central para mantener datos consistentes\n✅ Acceptance Criteria\n\n- [ ]  Sync bidireccional implementado\n- [ ]  Manejo conflictos configurado\n- [ ]  Versionado datos funcional\n\n📝 Tasks\n\n- [ ]  API REST completa\n- [ ]  Sync bidireccional\n- [ ]  Manejo conflictos datos\n- [ ]  Versionado datos\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Crítica\nResponsable: Mobile Engineer\nDependencies: -",
+    "user_story": "Como Sistema quiero sincronizar app móvil con servidor central para mantener datos consistentes\n✅",
+    "acceptance_criteria": [
+      "Sync bidireccional implementado",
+      "Manejo conflictos configurado",
+      "Versionado datos funcional"
+    ],
+    "tasks": [
+      "API REST completa",
+      "Sync bidireccional",
+      "Manejo conflictos datos",
+      "Versionado datos"
+    ],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 58,
+    "title": "[US055] Comparativo antes/después - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/58",
+    "created_at": "2025-09-02T21:32:40+00:00",
+    "closed_at": "2025-11-06T16:46:12+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver reporte comparativo antes/después implementación para demostrar ROI del proyecto\n✅ Acceptance Criteria\n\n- [ ]  Métricas pre/post sistema calculadas\n- [ ]  KPIs impacto definidos y medidos\n- [ ]  Análisis costo-beneficio realizado\n\n📝 Tasks\n\n- [ ]  Datos baseline pre-sistema\n- [ ]  Métricas pre/post implementación\n- [ ]  KPIs impacto proyecto\n- [ ]  Análisis costo-beneficio ROI\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Alta\nResponsable: Data Analyst\nDependencies: US046",
+    "user_story": "Como Administrador quiero ver reporte comparativo antes/después implementación para demostrar ROI del proyecto\n✅",
+    "acceptance_criteria": [
+      "Métricas pre/post sistema calculadas",
+      "KPIs impacto definidos y medidos",
+      "Análisis costo-beneficio realizado"
+    ],
+    "tasks": [
+      "Datos baseline pre-sistema",
+      "Métricas pre/post implementación",
+      "KPIs impacto proyecto",
+      "Análisis costo-beneficio ROI"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 57,
+    "title": "[US054] Uso buses sugerido vs real - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/57",
+    "created_at": "2025-09-02T21:32:04+00:00",
+    "closed_at": "2025-11-06T14:40:18+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver reporte uso buses sugerido vs real para evaluar adopción de sugerencias\n✅ Acceptance Criteria\n\n- [ ]  Comparativo horarios sugeridos vs implementados\n- [ ]  Impacto medido y cuantificado\n- [ ]  Dashboard adopción sugerencias\n\n📝 Tasks\n\n- [ ]  Tracking implementación sugerencias\n- [ ]  Comparativo sugerido vs real\n- [ ]  Medición impacto adopción\n- [ ]  Dashboard seguimiento buses\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Media\nResponsable: Data Analyst\nDependencies: US049",
+    "user_story": "Como Administrador quiero ver reporte uso buses sugerido vs real para evaluar adopción de sugerencias\n✅",
+    "acceptance_criteria": [
+      "Comparativo horarios sugeridos vs implementados",
+      "Impacto medido y cuantificado",
+      "Dashboard adopción sugerencias"
+    ],
+    "tasks": [
+      "Tracking implementación sugerencias",
+      "Comparativo sugerido vs real",
+      "Medición impacto adopción",
+      "Dashboard seguimiento buses"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 56,
+    "title": "[US059] Múltiples guardias simultáneos - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/56",
+    "created_at": "2025-09-02T21:31:11+00:00",
+    "closed_at": "2025-09-18T21:35:12+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "integration"
+    ],
+    "assignees": [
+      "LunaJuarezJuan"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **soportar múltiples guardias simultáneos** para **escalabilidad operacional**\n\n## ✅ Acceptance Criteria\n- [ ] Concurrencia manejada\n- [ ] Locks optimistas\n- [ ] Resolución conflictos\n\n## 📋 Tasks\n- [ ] Manejo concurrencia BD\n- [ ] Locks optimistas\n- [ ] Resolución conflictos\n- [ ] Testing concurrencia\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Alta\n**Responsable:** Mobile Software Architect\n**Dependencies:** US056",
+    "user_story": "Como Sistema quiero soportar múltiples guardias simultáneos para escalabilidad operacional\n\n## ✅",
+    "acceptance_criteria": [
+      "Concurrencia manejada",
+      "Locks optimistas",
+      "Resolución conflictos"
+    ],
+    "tasks": [
+      "Manejo concurrencia BD",
+      "Locks optimistas",
+      "Resolución conflictos",
+      "Testing concurrencia"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 55,
+    "title": "[US053] Precisión modelo ML - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/55",
+    "created_at": "2025-09-02T21:31:10+00:00",
+    "closed_at": "2025-10-30T18:47:34+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver reporte de precisión del modelo ML para monitorear calidad predicciones\n✅ Acceptance Criteria\n\n- [ ]  Métricas precisión, recall, F1-score calculadas\n- [ ]  Evolución temporal mostrada\n- [ ]  Dashboard métricas ML disponible\n\n📝 Tasks\n\n- [ ]  Sistema métricas ML\n- [ ]  Cálculo precisión/recall/F1\n- [ ]  Evolución temporal métricas\n- [ ]  Dashboard monitoreo ML\n\nStory Points: 5\nEstimación: 20h\nPrioridad: Media\nResponsable: ML Engineer\nDependencies: US044",
+    "user_story": "Como Administrador quiero ver reporte de precisión del modelo ML para monitorear calidad predicciones\n✅",
+    "acceptance_criteria": [
+      "Métricas precisión, recall, F1-score calculadas",
+      "Evolución temporal mostrada",
+      "Dashboard métricas ML disponible"
+    ],
+    "tasks": [
+      "Sistema métricas ML",
+      "Cálculo precisión/recall/F1",
+      "Evolución temporal métricas",
+      "Dashboard monitoreo ML"
+    ],
+    "story_points": "5",
+    "estimacion": "20h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 54,
+    "title": "[US057] Funcionalidad offline - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/54",
+    "created_at": "2025-09-02T21:30:44+00:00",
+    "closed_at": "2025-09-18T21:11:37+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "offline-support"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **usar app offline con sincronización posterior** para **trabajar sin conexión internet**\n\n## ✅ Acceptance Criteria\n- [ ] Cache local\n- [ ] Queue eventos offline\n- [ ] Sync automático al reconectar\n\n## 📋 Tasks\n- [ ] Storage local SQLite\n- [ ] Queue eventos offline\n- [ ] Detección conexión\n- [ ] Sync automático reconexión\n- [ ] Resolución conflictos\n\n**Story Points:** 13\n**Estimación:** 52h\n**Prioridad:** Alta\n**Responsable:** Mobile Software Architect\n**Dependencies:** US056",
+    "user_story": "Como Guardia quiero usar app offline con sincronización posterior para trabajar sin conexión internet\n\n## ✅",
+    "acceptance_criteria": [
+      "Cache local",
+      "Queue eventos offline",
+      "Sync automático al reconectar"
+    ],
+    "tasks": [
+      "Storage local SQLite",
+      "Queue eventos offline",
+      "Detección conexión",
+      "Sync automático reconexión",
+      "Resolución conflictos"
+    ],
+    "story_points": "** 13",
+    "estimacion": "** 52h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 53,
+    "title": "[US052] Horarios pico ML - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/53",
+    "created_at": "2025-09-02T21:30:40+00:00",
+    "closed_at": "2025-10-30T18:01:36+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver reporte de horarios pico por ML para validar predicciones del modelo\n✅ Acceptance Criteria\n\n- [ ]  Comparación ML vs real disponible\n- [ ]  Precisión por horario calculada\n- [ ]  Ajustes sugeridos generados\n\n📝 Tasks\n\n- [ ]  Modelo ML validado\n- [ ]  Comparación ML vs real\n- [ ]  Métricas precisión por horario\n- [ ]  Generador ajustes sugeridos\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Alta\nResponsable: ML Engineer\nDependencies: US048",
+    "user_story": "Como Administrador quiero ver reporte de horarios pico por ML para validar predicciones del modelo\n✅",
+    "acceptance_criteria": [
+      "Comparación ML vs real disponible",
+      "Precisión por horario calculada",
+      "Ajustes sugeridos generados"
+    ],
+    "tasks": [
+      "Modelo ML validado",
+      "Comparación ML vs real",
+      "Métricas precisión por horario",
+      "Generador ajustes sugeridos"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 52,
+    "title": "[US056] Sincronización app-servidor - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/52",
+    "created_at": "2025-09-02T21:30:06+00:00",
+    "closed_at": "2025-09-18T21:31:39+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "integration"
+    ],
+    "assignees": [
+      "LunaJuarezJuan"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **sincronizar app móvil con servidor central** para **mantener datos consistentes**\n\n## ✅ Acceptance Criteria\n- [ ] Sync bidireccional\n- [ ] Manejo conflictos\n- [ ] Versionado datos\n\n## 📋 Tasks\n- [ ] API REST sincronización\n- [ ] Manejo conflictos datos\n- [ ] Versionado datos\n- [ ] Queue sincronización\n- [ ] Logs de sincronización\n\n**Story Points:** 13\n**Estimación:** 52h\n**Prioridad:** Crítica\n**Responsable:** Mobile Software Architect\n**Prerequisites:** API REST completa",
+    "user_story": "Como Sistema quiero sincronizar app móvil con servidor central para mantener datos consistentes\n\n## ✅",
+    "acceptance_criteria": [
+      "Sync bidireccional",
+      "Manejo conflictos",
+      "Versionado datos"
+    ],
+    "tasks": [
+      "API REST sincronización",
+      "Manejo conflictos datos",
+      "Versionado datos",
+      "Queue sincronización",
+      "Logs de sincronización"
+    ],
+    "story_points": "** 13",
+    "estimacion": "** 52h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 51,
+    "title": "[US051] Estudiantes más activos - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/51",
+    "created_at": "2025-09-02T21:30:00+00:00",
+    "closed_at": "2025-10-07T21:09:57+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver reporte de estudiantes más activos para identificar usuarios frecuentes\n✅ Acceptance Criteria\n\n- [x]  Ranking por accesos disponible\n- [x]  Período configurable implementado\n- [x]  Datos estadísticos calculados\n\n📝 Tasks\n\n- [ ]  Análisis estadístico usuarios\n- [ ]  Ranking por accesos\n- [ ]  Configuración períodos\n- [ ]  Dashboard estudiantes activos\n\nStory Points: 5\nEstimación: 20h\nPrioridad: Baja\nResponsable: Data Analyst\nDependencies: US046",
+    "user_story": "Como Administrador quiero ver reporte de estudiantes más activos para identificar usuarios frecuentes\n✅",
+    "acceptance_criteria": [
+      "Ranking por accesos disponible",
+      "Período configurable implementado",
+      "Datos estadísticos calculados"
+    ],
+    "tasks": [
+      "Análisis estadístico usuarios",
+      "Ranking por accesos",
+      "Configuración períodos",
+      "Dashboard estudiantes activos"
+    ],
+    "story_points": "5",
+    "estimacion": "20h",
+    "prioridad": "Baja",
+    "dependencias": ""
+  },
+  {
+    "number": 50,
+    "title": "[US035] Filtrar por carrera y fechas - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/50",
+    "created_at": "2025-09-02T21:29:15+00:00",
+    "closed_at": "2025-10-30T19:07:04+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "search-filters"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **filtrar por carrera o rango de fechas** para **análisis específico de datos**\n\n## ✅ Acceptance Criteria\n- [ ] Filtros múltiples\n- [ ] Date picker\n- [ ] Dropdown carreras\n- [ ] Combinaciones\n\n## 📋 Tasks\n- [ ] Componentes filtro UI\n- [ ] Date picker rango fechas\n- [ ] Dropdown carreras\n- [ ] Combinación múltiples filtros\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Media\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US034",
+    "user_story": "Como Guardia quiero filtrar por carrera o rango de fechas para análisis específico de datos\n\n## ✅",
+    "acceptance_criteria": [
+      "Filtros múltiples",
+      "Date picker",
+      "Dropdown carreras",
+      "Combinaciones"
+    ],
+    "tasks": [
+      "Componentes filtro UI",
+      "Date picker rango fechas",
+      "Dropdown carreras",
+      "Combinación múltiples filtros"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 49,
+    "title": "[US050] Exportar reportes PDF/Excel - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/49",
+    "created_at": "2025-09-02T21:29:05+00:00",
+    "closed_at": "2025-10-30T17:26:31+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero exportar reportes en PDF/Excel para compartir con otros departamentos\n✅ Acceptance Criteria\n\n- [x] Exportación PDF con gráficos funcional\n- [x]  Excel con datos raw disponible\n- [x]  Formato profesional aplicado\n\n📝 Tasks\n\n- [x]  Librerías exportación integradas\n- [x]  Exportación PDF con gráficos\n- [x]  Exportación Excel datos raw\n- [x]  Templates formato profesional\n\nStory Points: 5\nEstimación: 20h\nPrioridad: Media\nResponsable: Frontend Engineer\nDependencies: US046",
+    "user_story": "Como Administrador quiero exportar reportes en PDF/Excel para compartir con otros departamentos\n✅",
+    "acceptance_criteria": [
+      "Exportación PDF con gráficos funcional",
+      "Excel con datos raw disponible",
+      "Formato profesional aplicado"
+    ],
+    "tasks": [
+      "Librerías exportación integradas",
+      "Exportación PDF con gráficos",
+      "Exportación Excel datos raw",
+      "Templates formato profesional"
+    ],
+    "story_points": "5",
+    "estimacion": "20h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 48,
+    "title": "[US034] Historial accesos recientes - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/48",
+    "created_at": "2025-09-02T21:28:39+00:00",
+    "closed_at": "2025-09-18T21:17:13+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "search-filters"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **ver historial de accesos recientes** para **revisar actividad pasada**\n\n## ✅ Acceptance Criteria\n- [ ] Lista cronológica\n- [x] Últimas 24h/48h\n- [x] Detalles completos\n\n## 📋 Tasks\n- [x] Query accesos recientes\n- [x] Filtro temporal configurable\n- [ ] Lista cronológica\n- [ ] Detalles completos evento\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Baja\n**Responsable:** Mid Tester\n**Dependencies:** US030",
+    "user_story": "Como Guardia quiero ver historial de accesos recientes para revisar actividad pasada\n\n## ✅",
+    "acceptance_criteria": [
+      "Lista cronológica",
+      "Últimas 24h/48h",
+      "Detalles completos"
+    ],
+    "tasks": [
+      "Query accesos recientes",
+      "Filtro temporal configurable",
+      "Lista cronológica",
+      "Detalles completos evento"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Baja",
+    "dependencias": ""
+  },
+  {
+    "number": 47,
+    "title": "[US049] Reportes eficiencia buses - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/47",
+    "created_at": "2025-09-02T21:28:20+00:00",
+    "closed_at": "2025-11-06T14:27:13+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver reportes de eficiencia de buses para evaluar impacto de optimizaciones\n✅ Acceptance Criteria\n\n- [ ]  Métricas utilización calculadas\n- [ ]  Comparativo antes/después disponible\n- [ ]  ROI calculado automáticamente\n\n📝 Tasks\n\n- [ ]  Datos eficiencia buses\n- [ ]  Métricas utilización\n- [ ]  Comparativo antes/después\n- [ ]  Cálculo ROI automatizado\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Media\nResponsable: Data Analyst\nDependencies: US039, US046\n",
+    "user_story": "Como Administrador quiero ver reportes de eficiencia de buses para evaluar impacto de optimizaciones\n✅",
+    "acceptance_criteria": [
+      "Métricas utilización calculadas",
+      "Comparativo antes/después disponible",
+      "ROI calculado automáticamente"
+    ],
+    "tasks": [
+      "Datos eficiencia buses",
+      "Métricas utilización",
+      "Comparativo antes/después",
+      "Cálculo ROI automatizado"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 46,
+    "title": "[US033] Buscar estudiante - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/46",
+    "created_at": "2025-09-02T21:28:08+00:00",
+    "closed_at": "2025-09-18T21:26:45+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "search-filters"
+    ],
+    "assignees": [
+      "LunaJuarezJuan"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **buscar estudiante por nombre o ID** para **encontrar información específica**\n\n## ✅ Acceptance Criteria\n- [ ] Search box\n- [ ] Autocompletado\n- [ ] Resultados múltiples\n- [ ] Datos completos\n\n## 📋 Tasks\n- [ ] Componente search box\n- [ ] Autocompletado con AJAX\n- [ ] Búsqueda full-text\n- [ ] Display resultados múltiples\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Media\n**Responsable:** Mid Tester\n**Dependencies:** US014",
+    "user_story": "Como Guardia quiero buscar estudiante por nombre o ID para encontrar información específica\n\n## ✅",
+    "acceptance_criteria": [
+      "Search box",
+      "Autocompletado",
+      "Resultados múltiples",
+      "Datos completos"
+    ],
+    "tasks": [
+      "Componente search box",
+      "Autocompletado con AJAX",
+      "Búsqueda full-text",
+      "Display resultados múltiples"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 45,
+    "title": "[US032] Lista estudiantes en campus - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/45",
+    "created_at": "2025-09-02T21:27:39+00:00",
+    "closed_at": "2025-11-04T21:50:51+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "real-time"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **ver estudiantes actualmente en campus** para **conocer ocupación actual**\n\n## ✅ Acceptance Criteria\n- [ ] Lógica entrada-salida\n- [ ] Estado actual\n- [ ] Contador total\n\n## 📋 Tasks\n- [ ] Algoritmo estudiantes actuales\n- [ ] Query estado tiempo real\n- [ ] Contador ocupación\n- [ ] Actualización automática\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Alta\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US028",
+    "user_story": "Como Guardia quiero ver estudiantes actualmente en campus para conocer ocupación actual\n\n## ✅",
+    "acceptance_criteria": [
+      "Lógica entrada-salida",
+      "Estado actual",
+      "Contador total"
+    ],
+    "tasks": [
+      "Algoritmo estudiantes actuales",
+      "Query estado tiempo real",
+      "Contador ocupación",
+      "Actualización automática"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 44,
+    "title": "[US048] Predicciones modelo ML - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/44",
+    "created_at": "2025-09-02T21:26:45+00:00",
+    "closed_at": "2025-10-30T18:17:17+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero visualizar predicciones del modelo ML para planificar basado en predicciones\n✅ Acceptance Criteria\n\n- [ ]  Gráficos predicción vs real disponibles\n- [ ]  Intervalos confianza mostrados\n- [ ]  Actualización automática configurada\n\n📝 Tasks\n\n- [ ]  Modelo ML productivo integrado\n- [ ]  Gráficos predicción vs real\n- [ ]  Intervalos confianza\n- [ ]  Actualización automática\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Alta\nResponsable: ML Engineer\nDependencies: US044, US046",
+    "user_story": "Como Administrador quiero visualizar predicciones del modelo ML para planificar basado en predicciones\n✅",
+    "acceptance_criteria": [
+      "Gráficos predicción vs real disponibles",
+      "Intervalos confianza mostrados",
+      "Actualización automática configurada"
+    ],
+    "tasks": [
+      "Modelo ML productivo integrado",
+      "Gráficos predicción vs real",
+      "Intervalos confianza",
+      "Actualización automática"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 43,
+    "title": "[US031] Lista estudiantes hoy - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/43",
+    "created_at": "2025-09-02T21:26:43+00:00",
+    "closed_at": "2025-09-18T21:17:03+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "search-filters"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **ver lista de estudiantes que ingresaron hoy** para **monitorear actividad diaria**\n\n## ✅ Acceptance Criteria\n- [x] Query fecha actual\n- [x] Lista ordenada por hora\n- [x] Filtros básicos\n\n## 📋 Tasks\n- [x] Query estudiantes día actual\n- [x] Ordenamiento por hora\n- [x] Filtros básicos\n- [x] Paginación resultados\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Media\n**Responsable:** Mid Tester\n**Dependencies:** US030",
+    "user_story": "Como Guardia quiero ver lista de estudiantes que ingresaron hoy para monitorear actividad diaria\n\n## ✅",
+    "acceptance_criteria": [
+      "Query fecha actual",
+      "Lista ordenada por hora",
+      "Filtros básicos"
+    ],
+    "tasks": [
+      "Query estudiantes día actual",
+      "Ordenamiento por hora",
+      "Filtros básicos",
+      "Paginación resultados"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 42,
+    "title": "[US030] Historial completo - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/42",
+    "created_at": "2025-09-02T21:26:18+00:00",
+    "closed_at": "2025-11-04T21:42:36+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **mantener historial completo de movimientos** para **análisis y auditorías**\n\n## ✅ Acceptance Criteria\n- [ ] Almacenamiento permanente\n- [ ] Índices optimizados\n- [ ] Políticas retención\n\n## 📋 Tasks\n- [ ] Particionamiento tabla eventos\n- [ ] Índices optimizados\n- [ ] Políticas retención datos\n- [ ] Archivado histórico\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Media\n**Responsable:** Mobile Software Architect\n**Dependencies:** US026",
+    "user_story": "Como Sistema quiero mantener historial completo de movimientos para análisis y auditorías\n\n## ✅",
+    "acceptance_criteria": [
+      "Almacenamiento permanente",
+      "Índices optimizados",
+      "Políticas retención"
+    ],
+    "tasks": [
+      "Particionamiento tabla eventos",
+      "Índices optimizados",
+      "Políticas retención datos",
+      "Archivado histórico"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 41,
+    "title": "[US029] Registrar ubicación - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/41",
+    "created_at": "2025-09-02T21:25:55+00:00",
+    "closed_at": "2025-11-04T21:36:59+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **registrar ubicación/punto de control** para **saber por dónde accedió**\n\n## ✅ Acceptance Criteria\n- [ ] ID punto control\n- [ ] Coordenadas si aplica\n- [ ] Descripción ubicación\n\n## 📋 Tasks\n- [ ] Campo punto control en eventos\n- [ ] Coordenadas GPS opcionales\n- [ ] Descripción ubicación\n- [ ] Mapa puntos control\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Media\n**Responsable:** Mid Tester\n**Dependencies:** US008",
+    "user_story": "Como Sistema quiero registrar ubicación/punto de control para saber por dónde accedió\n\n## ✅",
+    "acceptance_criteria": [
+      "ID punto control",
+      "Coordenadas si aplica",
+      "Descripción ubicación"
+    ],
+    "tasks": [
+      "Campo punto control en eventos",
+      "Coordenadas GPS opcionales",
+      "Descripción ubicación",
+      "Mapa puntos control"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 40,
+    "title": "[US047] Gráficos flujo horarios - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/40",
+    "created_at": "2025-09-02T21:25:35+00:00",
+    "closed_at": "2025-10-07T17:35:14+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero ver gráficos de flujo por horarios y días para identificar patrones visualmente\n✅ Acceptance Criteria\n\n- [x]  Charts interactivos implementados\n- [x]  Filtros temporales funcionales\n- [x]  Drill-down por día/hora disponible\n\n📝 Tasks\n\n- [x]  Librería charting integrada\n- [x]  Charts interactivos flujo\n- [x]  Filtros temporales\n- [x]  Drill-down día/hora\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Alta\nResponsable: Frontend Engineer\nDependencies: US046",
+    "user_story": "Como Administrador quiero ver gráficos de flujo por horarios y días para identificar patrones visualmente\n✅",
+    "acceptance_criteria": [
+      "Charts interactivos implementados",
+      "Filtros temporales funcionales",
+      "Drill-down por día/hora disponible"
+    ],
+    "tasks": [
+      "Librería charting integrada",
+      "Charts interactivos flujo",
+      "Filtros temporales",
+      "Drill-down día/hora"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 39,
+    "title": "[US028] Distinguir entrada/salida - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/39",
+    "created_at": "2025-09-02T21:25:27+00:00",
+    "closed_at": "2025-11-04T20:40:45+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **distinguir entrada/salida de campus** para **saber quién está dentro**\n\n## ✅ Acceptance Criteria\n- [ ] Campo tipo movimiento\n- [ ] Lógica entrada/salida\n- [ ] Validación coherencia\n\n## 📋 Tasks\n- [ ] Enum tipo movimiento\n- [ ] Lógica entrada/salida\n- [ ] Validación coherencia temporal\n- [ ] Cálculo estudiantes en campus\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Alta\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US026",
+    "user_story": "Como Sistema quiero distinguir entrada/salida de campus para saber quién está dentro\n\n## ✅",
+    "acceptance_criteria": [
+      "Campo tipo movimiento",
+      "Lógica entrada/salida",
+      "Validación coherencia"
+    ],
+    "tasks": [
+      "Enum tipo movimiento",
+      "Lógica entrada/salida",
+      "Validación coherencia temporal",
+      "Cálculo estudiantes en campus"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 38,
+    "title": "[US046] Dashboard general accesos - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/38",
+    "created_at": "2025-09-02T21:24:52+00:00",
+    "closed_at": "2025-10-30T18:47:01+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-5"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero visualizar dashboard general de accesos para monitorear sistema en tiempo real\n✅ Acceptance Criteria\n\n- [ ]  Métricas tiempo real disponibles\n- [ ]  Gráficos interactivos implementados\n- [ ]  Responsive design funcional\n\n📝 Tasks\n\n- [ ]  Framework web base\n- [ ]  Métricas tiempo real\n- [ ]  Gráficos interactivos\n- [ ]  Responsive design\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Crítica\nResponsable: Frontend Engineer\nDependencies: US030",
+    "user_story": "Como Administrador quiero visualizar dashboard general de accesos para monitorear sistema en tiempo real\n✅",
+    "acceptance_criteria": [
+      "Métricas tiempo real disponibles",
+      "Gráficos interactivos implementados",
+      "Responsive design funcional"
+    ],
+    "tasks": [
+      "Framework web base",
+      "Métricas tiempo real",
+      "Gráficos interactivos",
+      "Responsive design"
+    ],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 37,
+    "title": "[US027] Guardar fecha, hora, datos - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/37",
+    "created_at": "2025-09-02T21:24:51+00:00",
+    "closed_at": "2025-11-06T17:32:31+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2"
+    ],
+    "assignees": [
+      "LunaJuarezJuan",
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **guardar fecha, hora, estudiante, guardia y decisión** para **tener registro completo del evento**\n\n## ✅ Acceptance Criteria\n- [ ] Persistencia completa datos\n- [ ] Integridad referencial\n- [ ] Backup automático\n\n## 📋 Tasks\n- [ ] Integridad referencial FK\n- [ ] Triggers BD auditoría\n- [ ] Backup automático\n- [ ] Validación consistencia\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Media\n**Responsable:** Mobile Software Architect\n**Dependencies:** US026",
+    "user_story": "Como Sistema quiero guardar fecha, hora, estudiante, guardia y decisión para tener registro completo del evento\n\n## ✅",
+    "acceptance_criteria": [
+      "Persistencia completa datos",
+      "Integridad referencial",
+      "Backup automático"
+    ],
+    "tasks": [
+      "Integridad referencial FK",
+      "Triggers BD auditoría",
+      "Backup automático",
+      "Validación consistencia"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 36,
+    "title": "[US026] Registrar accesos - 5pts",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/36",
+    "created_at": "2025-09-02T21:23:33+00:00",
+    "closed_at": null,
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2"
+    ],
+    "assignees": [
+      "LunaJuarezJuan"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **registrar accesos entrada/salida** para **llevar control de movimientos**\n\n## ✅ Acceptance Criteria\n- [ ] Registro tipo acceso\n- [ ] Timestamp, estudiante, guardia\n- [ ] Punto control\n\n## 📋 Tasks\n- [ ] Esquema BD eventos acceso\n- [ ] Service registro accesos\n- [ ] Validación datos obligatorios\n- [ ] Índices rendimiento\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Crítica\n**Responsable:** Mobile Software Architect\n**Dependencies:** US025",
+    "user_story": "Como Sistema quiero registrar accesos entrada/salida para llevar control de movimientos\n\n## ✅",
+    "acceptance_criteria": [
+      "Registro tipo acceso",
+      "Timestamp, estudiante, guardia",
+      "Punto control"
+    ],
+    "tasks": [
+      "Esquema BD eventos acceso",
+      "Service registro accesos",
+      "Validación datos obligatorios",
+      "Índices rendimiento"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 35,
+    "title": "[US025] Registrar decisión timestamp - 3pts",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/35",
+    "created_at": "2025-09-02T21:22:48+00:00",
+    "closed_at": null,
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2"
+    ],
+    "assignees": [
+      "LunaJuarezJuan"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **registrar decisión con timestamp** para **mantener trazabilidad completa**\n\n## ✅ Acceptance Criteria\n- [ ] Timestamp preciso\n- [ ] ID guardia\n- [ ] Decisión tomada\n- [ ] Persistencia BD\n\n## 📋 Tasks\n- [ ] Modelo entidad evento\n- [ ] Timestamp UTC preciso\n- [ ] Persistencia BD\n- [ ] Índices optimización\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Media\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US024",
+    "user_story": "Como Sistema quiero registrar decisión con timestamp para mantener trazabilidad completa\n\n## ✅",
+    "acceptance_criteria": [
+      "Timestamp preciso",
+      "ID guardia",
+      "Decisión tomada",
+      "Persistencia BD"
+    ],
+    "tasks": [
+      "Modelo entidad evento",
+      "Timestamp UTC preciso",
+      "Persistencia BD",
+      "Índices optimización"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 34,
+    "title": "[US045] Actualización semanal modelo - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/34",
+    "created_at": "2025-09-02T21:22:45+00:00",
+    "closed_at": "2025-10-30T18:35:38+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero actualizar modelo semanalmente para mantener precisión con datos recientes\n✅ Acceptance Criteria\n\n- [ ]  Job automático semanal configurado\n- [ ]  Reentrenamiento incremental implementado\n- [ ]  Validación performance automatizada\n\n📝 Tasks\n\n- [ ]  Job automático semanal\n- [ ]  Reentrenamiento incremental\n- [ ]  Validación performance continua\n- [ ]  Monitoreo drift modelo\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Media\nResponsable: DevOps Engineer\nDependencies: US044",
+    "user_story": "Como Sistema quiero actualizar modelo semanalmente para mantener precisión con datos recientes\n✅",
+    "acceptance_criteria": [
+      "Job automático semanal configurado",
+      "Reentrenamiento incremental implementado",
+      "Validación performance automatizada"
+    ],
+    "tasks": [
+      "Job automático semanal",
+      "Reentrenamiento incremental",
+      "Validación performance continua",
+      "Monitoreo drift modelo"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 33,
+    "title": "[US024] Autorización manual - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/33",
+    "created_at": "2025-09-02T21:22:22+00:00",
+    "closed_at": "2025-09-18T21:16:49+00:00",
+    "labels": [
+      "enhancement",
+      "user-management",
+      "sprint-2"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **autorizar/denegar manualmente** para **tener control final sobre acceso**\n\n## ✅ Acceptance Criteria\n- [x] Botones claros Autorizar/Denegar\n- [x] Confirmación visual\n- [x] Registro decisión\n\n## 📋 Tasks\n- [x] Botones Autorizar/Denegar\n- [x] Modal confirmación\n- [x] Registro decisión BD\n- [x] Feedback visual inmediato\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Crítica\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US023",
+    "user_story": "Como Guardia quiero autorizar/denegar manualmente para tener control final sobre acceso\n\n## ✅",
+    "acceptance_criteria": [
+      "Botones claros Autorizar/Denegar",
+      "Confirmación visual",
+      "Registro decisión"
+    ],
+    "tasks": [
+      "Botones Autorizar/Denegar",
+      "Modal confirmación",
+      "Registro decisión BD",
+      "Feedback visual inmediato"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 32,
+    "title": "[US023] Mostrar datos estudiante - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/32",
+    "created_at": "2025-09-02T21:21:52+00:00",
+    "closed_at": "2025-11-06T17:05:18+00:00",
+    "labels": [
+      "enhancement",
+      "user-management",
+      "sprint-2"
+    ],
+    "assignees": [
+      "LunaJuarezJuan",
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **ver datos básicos del estudiante** para **confirmar identidad visualmente**\n\n## ✅ Acceptance Criteria\n- [ ] Display nombre, foto, carrera\n- [ ] ID claramente visible\n- [ ] Interfaz clara\n\n## 📋 Tasks\n- [ ] Componente display estudiante\n- [ ] Carga de foto estudiante\n- [ ] Formato datos legible\n- [ ] Responsive design\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Media\n**Responsable:** Mid Tester\n**Dependencies:** US014",
+    "user_story": "Como Guardia quiero ver datos básicos del estudiante para confirmar identidad visualmente\n\n## ✅",
+    "acceptance_criteria": [
+      "Display nombre, foto, carrera",
+      "ID claramente visible",
+      "Interfaz clara"
+    ],
+    "tasks": [
+      "Componente display estudiante",
+      "Carga de foto estudiante",
+      "Formato datos legible",
+      "Responsive design"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 31,
+    "title": "[US044] Entrenar con históricos - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/31",
+    "created_at": "2025-09-02T21:21:42+00:00",
+    "closed_at": "2025-10-30T17:57:26+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-4"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero entrenar modelo con datos históricos mínimo 3 meses para obtener modelo confiable\n✅ Acceptance Criteria\n\n- [ ]  Dataset ≥3 meses disponible\n- [ ]  Train/test split realizado\n- [ ]  Métricas validación calculadas\n\n📝 Tasks\n\n- [ ]  Recopilación dataset 3+ meses\n- [ ]  Implementación train/test split\n- [ ]  Pipeline entrenamiento\n- [ ]  Métricas validación modelo\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Crítica\nResponsable: ML Engineer\nDependencies: US041. US042, US043",
+    "user_story": "Como Sistema quiero entrenar modelo con datos históricos mínimo 3 meses para obtener modelo confiable\n✅",
+    "acceptance_criteria": [
+      "Dataset ≥3 meses disponible",
+      "Train/test split realizado",
+      "Métricas validación calculadas"
+    ],
+    "tasks": [
+      "Recopilación dataset 3+ meses",
+      "Implementación train/test split",
+      "Pipeline entrenamiento",
+      "Métricas validación modelo"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 30,
+    "title": "[US022] Verificar estado activo - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/30",
+    "created_at": "2025-09-02T21:21:06+00:00",
+    "closed_at": "2025-09-30T20:46:23+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Angelhc123"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **verificar estado activo del estudiante** para **autorizar solo estudiantes vigentes**\n\n## ✅ Acceptance Criteria\n- [ ] Check estado en BD\n- [ ] Validación temporal\n- [ ] Indicador status\n\n## 📋 Tasks\n- [ ] Verificación estado activo\n- [ ] Validación temporal matrícula\n- [ ] Indicadores status UI\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Alta\n**Responsable:** Mid Tester\n**Dependencies:** US013",
+    "user_story": "Como Sistema quiero verificar estado activo del estudiante para autorizar solo estudiantes vigentes\n\n## ✅",
+    "acceptance_criteria": [
+      "Check estado en BD",
+      "Validación temporal",
+      "Indicador status"
+    ],
+    "tasks": [
+      "Verificación estado activo",
+      "Validación temporal matrícula",
+      "Indicadores status UI"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 29,
+    "title": "[US021] Validar ID pulsera - 5pts",
+    "state": "open",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/29",
+    "created_at": "2025-09-02T21:20:29+00:00",
+    "closed_at": null,
+    "labels": [
+      "enhancement",
+      "database",
+      "nfc",
+      "sprint-2"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **validar ID contra BD** para **verificar autenticidad de pulsera**\n\n## ✅ Acceptance Criteria\n- [ ] Query BD pulseras\n- [ ] Validación existencia\n- [x] Manejo IDs inválidos\n\n## 📋 Tasks\n- [ ] Query validación BD\n- [x] Cache pulseras válidas\n- [ ] Manejo IDs inválidos\n- [x] Logs seguridad\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Alta\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US018",
+    "user_story": "Como Sistema quiero validar ID contra BD para verificar autenticidad de pulsera\n\n## ✅",
+    "acceptance_criteria": [
+      "Query BD pulseras",
+      "Validación existencia",
+      "Manejo IDs inválidos"
+    ],
+    "tasks": [
+      "Query validación BD",
+      "Cache pulseras válidas",
+      "Manejo IDs inválidos",
+      "Logs seguridad"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 28,
+    "title": "[US043] Series temporales - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/28",
+    "created_at": "2025-09-02T21:20:22+00:00",
+    "closed_at": "2025-11-04T21:19:49+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero implementar series temporales para modelar evolución temporal\n✅ Acceptance Criteria\n\n- [ ]  ARIMA o similar implementado\n- [ ]  Estacionalidad detectada\n- [ ]  Forecast precisión >75%\n\n📝 Tasks\n\n - [ ] Modelo ARIMA\n- [ ]  Detección estacionalidad\n- [ ]  Validación forecast\n- [ ]  Métricas precisión temporal\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Alta\nResponsable: ML Engineer\nDependencies: US036",
+    "user_story": "Como Sistema quiero implementar series temporales para modelar evolución temporal\n✅",
+    "acceptance_criteria": [
+      "ARIMA o similar implementado",
+      "Estacionalidad detectada",
+      "Forecast precisión >75%"
+    ],
+    "tasks": [
+      "Modelo ARIMA",
+      "Detección estacionalidad",
+      "Validación forecast",
+      "Métricas precisión temporal"
+    ],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 27,
+    "title": "[US020] Múltiples detecciones - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/27",
+    "created_at": "2025-09-02T21:20:01+00:00",
+    "closed_at": "2025-09-11T21:37:50+00:00",
+    "labels": [
+      "enhancement",
+      "nfc",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **manejar múltiples detecciones simultáneas** para **procesar varios estudiantes a la vez**\n\n## ✅ Acceptance Criteria\n- [ ] Queue detecciones\n- [ ] Procesamiento secuencial\n- [ ] Priorización por tiempo\n\n## 📋 Tasks\n- [ ] Queue procesamiento async\n- [ ] Algoritmo priorización\n- [ ] Manejo concurrencia\n- [ ] Optimización rendimiento\n- [ ] Stress testing\n\n**Story Points:** 13\n**Estimación:** 52h\n**Prioridad:** Alta\n**Responsable:** Mobile Software Architect\n**Dependencies:** US016",
+    "user_story": "Como Sistema quiero manejar múltiples detecciones simultáneas para procesar varios estudiantes a la vez\n\n## ✅",
+    "acceptance_criteria": [
+      "Queue detecciones",
+      "Procesamiento secuencial",
+      "Priorización por tiempo"
+    ],
+    "tasks": [
+      "Queue procesamiento async",
+      "Algoritmo priorización",
+      "Manejo concurrencia",
+      "Optimización rendimiento",
+      "Stress testing"
+    ],
+    "story_points": "** 13",
+    "estimacion": "** 52h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 26,
+    "title": "[US042] Clustering - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/26",
+    "created_at": "2025-09-02T21:19:29+00:00",
+    "closed_at": "2025-11-04T21:32:17+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero implementar clustering para agrupar patrones similares\n✅ Acceptance Criteria\n\n- [ ]  K-means o similar implementado\n- [ ]  Número óptimo clusters determinado\n- [ ]  Validación silhouette realizada\n\n📝 Tasks\n\n- [ ]  Algoritmo K-means\n- [ ]  Determinación clusters óptimos\n- [ ]  Validación silhouette\n- [ ]  Visualización clusters\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Media\nResponsable: ML Engineer\nDependencies: US036",
+    "user_story": "Como Sistema quiero implementar clustering para agrupar patrones similares\n✅",
+    "acceptance_criteria": [
+      "K-means o similar implementado",
+      "Número óptimo clusters determinado",
+      "Validación silhouette realizada"
+    ],
+    "tasks": [
+      "Algoritmo K-means",
+      "Determinación clusters óptimos",
+      "Validación silhouette",
+      "Visualización clusters"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 25,
+    "title": "[US019] Mostrar detecciones tiempo real - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/25",
+    "created_at": "2025-09-02T21:18:59+00:00",
+    "closed_at": "2025-09-30T19:51:44+00:00",
+    "labels": [
+      "enhancement",
+      "nfc",
+      "sprint-2",
+      "real-time"
+    ],
+    "assignees": [
+      "Angelhc123"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **ver dispositivos detectados en tiempo real** para **monitorear actividad NFC**\n\n## ✅ Acceptance Criteria\n- [ ] Lista tiempo real\n- [ ] Actualización automática\n- [ ] Indicadores de estado\n\n## 📋 Tasks\n- [ ] Interface tiempo real\n- [ ] WebSocket para updates\n- [ ] Indicadores estado visual\n- [ ] Lista detecciones activas\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Media\n**Responsable:** Mid Tester\n**Dependencies:** US016",
+    "user_story": "Como Guardia quiero ver dispositivos detectados en tiempo real para monitorear actividad NFC\n\n## ✅",
+    "acceptance_criteria": [
+      "Lista tiempo real",
+      "Actualización automática",
+      "Indicadores de estado"
+    ],
+    "tasks": [
+      "Interface tiempo real",
+      "WebSocket para updates",
+      "Indicadores estado visual",
+      "Lista detecciones activas"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 24,
+    "title": "[US041] Regresión lineal - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/24",
+    "created_at": "2025-09-02T21:18:09+00:00",
+    "closed_at": "2025-10-30T18:21:49+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero implementar regresión lineal para modelar relaciones lineales en datos\n✅ Acceptance Criteria\n\n- [ ]  Algoritmo regresión implementado\n- [ ]  R² > 0.7 alcanzado\n- [ ]  Validación cruzada realizada\n- [ ]  Métricas error calculadas\n\n📝 Tasks\n\n- [ ]  Algoritmo regresión lineal\n- [ ]  Validación cruzada\n- [ ]  Métricas error MSE/RMSE\n- [ ]  Optimización parámetros\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Media\nResponsable: ML Engineer\nDependencies: US036",
+    "user_story": "Como Sistema quiero implementar regresión lineal para modelar relaciones lineales en datos\n✅",
+    "acceptance_criteria": [
+      "Algoritmo regresión implementado",
+      "R² > 0.7 alcanzado",
+      "Validación cruzada realizada",
+      "Métricas error calculadas"
+    ],
+    "tasks": [
+      "Algoritmo regresión lineal",
+      "Validación cruzada",
+      "Métricas error MSE/RMSE",
+      "Optimización parámetros"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Media",
+    "dependencias": ""
+  },
+  {
+    "number": 23,
+    "title": "[US018] Asociar ID con estudiante - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/23",
+    "created_at": "2025-09-02T21:18:09+00:00",
+    "closed_at": "2025-11-07T00:31:09+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "nfc",
+      "sprint-2"
+    ],
+    "assignees": [
+      "KrCrimson",
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **asociar ID pulsera con estudiante** para **vincular identidad física con digital**\n\n## ✅ Acceptance Criteria\n- [ ] Mapping ID-estudiante\n- [x] Validación asociación\n- [ ] Manejo no encontrados\n\n## 📋 Tasks\n- [x] Tabla mapping pulsera-estudiante\n- [ ] CRUD asociaciones\n- [ ] Validaciones integridad\n- [ ] Manejo casos no encontrados\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Alta\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US017, US011",
+    "user_story": "Como Sistema quiero asociar ID pulsera con estudiante para vincular identidad física con digital\n\n## ✅",
+    "acceptance_criteria": [
+      "Mapping ID-estudiante",
+      "Validación asociación",
+      "Manejo no encontrados"
+    ],
+    "tasks": [
+      "Tabla mapping pulsera-estudiante",
+      "CRUD asociaciones",
+      "Validaciones integridad",
+      "Manejo casos no encontrados"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 22,
+    "title": "[US012] Sincronización datos estudiantes - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/22",
+    "created_at": "2025-09-02T21:17:29+00:00",
+    "closed_at": "2025-09-11T21:30:04+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-2",
+      "integration"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **sincronizar automáticamente datos** para **mantener información actualizada**\n\n## ✅ Acceptance Criteria\n- [ ] Sync programado\n- [ ] Detección cambios\n- [ ] Log sincronización\n\n## 📋 Tasks\n- [ ] Scheduler de sincronización\n- [ ] Detección de cambios (CDC)\n- [ ] Log de sincronización\n- [ ] Manejo de conflictos\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Alta\n**Responsable:** Mobile Software Architect\n**Dependencies:** US011",
+    "user_story": "Como Sistema quiero sincronizar automáticamente datos para mantener información actualizada\n\n## ✅",
+    "acceptance_criteria": [
+      "Sync programado",
+      "Detección cambios",
+      "Log sincronización"
+    ],
+    "tasks": [
+      "Scheduler de sincronización",
+      "Detección de cambios (CDC)",
+      "Log de sincronización",
+      "Manejo de conflictos"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 21,
+    "title": "[US010] Reportes actividad guardias - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/21",
+    "created_at": "2025-09-02T21:16:52+00:00",
+    "closed_at": "2025-09-18T20:58:53+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-3",
+      "reporting"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Administrador** quiero **generar reportes de actividad** para **supervisar desempeño del equipo**\n\n## ✅ Acceptance Criteria\n- [ ] Reporte por periodo\n- [ ] Métricas actividad\n- [ ] Exportación PDF\n\n## 📋 Tasks\n- [ ] Query builder para reportes\n- [ ] Generación de métricas\n- [ ] Exportación PDF\n- [ ] Programación automática\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Media\n**Responsable:** Scrum Master\n**Dependencies:** US006",
+    "user_story": "Como Administrador quiero generar reportes de actividad para supervisar desempeño del equipo\n\n## ✅",
+    "acceptance_criteria": [
+      "Reporte por periodo",
+      "Métricas actividad",
+      "Exportación PDF"
+    ],
+    "tasks": [
+      "Query builder para reportes",
+      "Generación de métricas",
+      "Exportación PDF",
+      "Programación automática"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 20,
+    "title": "[US040] Alertas congestión - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/20",
+    "created_at": "2025-09-02T21:16:49+00:00",
+    "closed_at": "2025-11-04T18:52:06+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Administrador quiero recibir alertas de congestión prevista para tomar medidas preventivas\n✅ Acceptance Criteria\n\n- [x]  Sistema alertas automático activo\n- [x]  Thresholds configurables\n- [x]  Notificaciones múltiples canales\n\n📝 Tasks\n\n- [x] Sistema alertas automático\n- [x]  Configuración thresholds\n- [x]  Notificaciones múltiples\n- [x]  Dashboard alertas admin\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Alta\nResponsable: Backend Engineer\nDependencies: US038",
+    "user_story": "Como Administrador quiero recibir alertas de congestión prevista para tomar medidas preventivas\n✅",
+    "acceptance_criteria": [
+      "Sistema alertas automático activo",
+      "Thresholds configurables",
+      "Notificaciones múltiples canales"
+    ],
+    "tasks": [
+      "Sistema alertas automático",
+      "Configuración thresholds",
+      "Notificaciones múltiples",
+      "Dashboard alertas admin"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 19,
+    "title": "[US039] Sugerir horarios buses - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/19",
+    "created_at": "2025-09-02T21:14:31+00:00",
+    "closed_at": "2025-11-06T17:23:39+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [
+      "KrCrimson",
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero sugerir horarios óptimos de buses para optimizar transporte universitario\n✅ Acceptance Criteria\n\n Algoritmo optimización implementado\n Sugerencias horarios generadas\n Métricas eficiencia calculadas\n\n📝 Tasks\n\n Algoritmo optimización horarios\n Generador sugerencias\n Métricas eficiencia transporte\n Interface sugerencias buses\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Alta\nResponsable: ML Engineer\nDependencies: US038",
+    "user_story": "Como Sistema quiero sugerir horarios óptimos de buses para optimizar transporte universitario\n✅",
+    "acceptance_criteria": [],
+    "tasks": [],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 18,
+    "title": "[US009] Modificar datos guardias - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/18",
+    "created_at": "2025-09-02T21:13:52+00:00",
+    "closed_at": "2025-09-18T21:16:36+00:00",
+    "labels": [
+      "enhancement",
+      "user-management",
+      "sprint-2"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Administrador** quiero **modificar datos de guardias** para **mantener información actualizada**\n\n## ✅ Acceptance Criteria\n- [x] Formulario edición\n- [x] Validación cambios\n- [ ] Historial modificaciones\n\n## 📋 Tasks\n- [x] Formulario edición guardia\n- [x] Validaciones de integridad\n- [ ] Log de cambios históricos\n- [ ] Interfaz de historial\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Media\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US006",
+    "user_story": "Como Administrador quiero modificar datos de guardias para mantener información actualizada\n\n## ✅",
+    "acceptance_criteria": [
+      "Formulario edición",
+      "Validación cambios",
+      "Historial modificaciones"
+    ],
+    "tasks": [
+      "Formulario edición guardia",
+      "Validaciones de integridad",
+      "Log de cambios históricos",
+      "Interfaz de historial"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 17,
+    "title": "[US008] Asignar puntos de control - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/17",
+    "created_at": "2025-09-02T21:13:07+00:00",
+    "closed_at": "2025-09-11T21:19:01+00:00",
+    "labels": [
+      "enhancement",
+      "user-management",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Administrador** quiero **asignar guardias a puntos específicos** para **organizar la cobertura de seguridad**\n\n## ✅ Acceptance Criteria\n- [x] Lista puntos control\n- [x] Asignación múltiple\n- [x] Visualización asignaciones\n\n## 📋 Tasks\n- [ ] CRUD puntos de control\n- [ ] Interface asignación múltiple\n- [ ] Mapa visual de asignaciones\n- [ ] Validaciones de conflictos\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Alta\n**Responsable:** Mobile Software Architect\n**Dependencies:** US006",
+    "user_story": "Como Administrador quiero asignar guardias a puntos específicos para organizar la cobertura de seguridad\n\n## ✅",
+    "acceptance_criteria": [
+      "Lista puntos control",
+      "Asignación múltiple",
+      "Visualización asignaciones"
+    ],
+    "tasks": [
+      "CRUD puntos de control",
+      "Interface asignación múltiple",
+      "Mapa visual de asignaciones",
+      "Validaciones de conflictos"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 16,
+    "title": "[US038] Predecir horarios pico - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/16",
+    "created_at": "2025-09-02T21:12:04+00:00",
+    "closed_at": "2025-10-30T18:25:26+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero predecir horarios pico entrada/salida para anticipar congestión\n✅ Acceptance Criteria\n\n- [ ]  Modelo predictivo implementado\n- [ ]  Precisión >80% alcanzada\n- [ ]  Predicción 24h adelante funcional\n\n📝 Tasks\n\n- [ ]  Modelo predictivo base\n- [ ]  Entrenamiento modelo\n- [ ]  Validación precisión\n- [ ]  API predicción 24h\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Crítica\nResponsable: ML Engineer\nDependencies: US037",
+    "user_story": "Como Sistema quiero predecir horarios pico entrada/salida para anticipar congestión\n✅",
+    "acceptance_criteria": [
+      "Modelo predictivo implementado",
+      "Precisión >80% alcanzada",
+      "Predicción 24h adelante funcional"
+    ],
+    "tasks": [
+      "Modelo predictivo base",
+      "Entrenamiento modelo",
+      "Validación precisión",
+      "API predicción 24h"
+    ],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 15,
+    "title": "[US007] Activar/desactivar guardias - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/15",
+    "created_at": "2025-09-02T21:11:24+00:00",
+    "closed_at": "2025-09-30T19:41:20+00:00",
+    "labels": [
+      "enhancement",
+      "user-management",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Angelhc123"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Administrador** quiero **activar/desactivar cuentas de guardias** para **controlar acceso al sistema**\n\n## ✅ Acceptance Criteria\n- [ ] Toggle activación\n- [ ] Bloqueo de acceso\n- [ ] Notificación al usuario\n\n## 📋 Tasks\n- [ ] Implementar toggle activación\n- [ ] Bloqueo de acceso en BD\n- [ ] Sistema de notificaciones\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Media\n**Responsable:** Mid Tester\n**Dependencies:** US006",
+    "user_story": "Como Administrador quiero activar/desactivar cuentas de guardias para controlar acceso al sistema\n\n## ✅",
+    "acceptance_criteria": [
+      "Toggle activación",
+      "Bloqueo de acceso",
+      "Notificación al usuario"
+    ],
+    "tasks": [
+      "Implementar toggle activación",
+      "Bloqueo de acceso en BD",
+      "Sistema de notificaciones"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 14,
+    "title": "[US037] Analizar patrones flujo - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/14",
+    "created_at": "2025-09-02T21:11:13+00:00",
+    "closed_at": "2025-11-04T21:27:19+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-4"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero analizar patrones de flujo de estudiantes para identificar tendencias\n✅ Acceptance Criteria\n\n- [ ]  Algoritmos análisis temporal implementados\n- [ ]  Detección patrones automatizada\n- [ ]  Visualización tendencias disponible\n\n📝 Tasks\n\n- [ ]  Algoritmos análisis temporal\n- [ ]  Detección patrones flujo\n- [ ]  Visualización tendencias\n- [ ]  Dashboard analítica\n\nStory Points: 13\nEstimación: 52h\nPrioridad: Crítica\nResponsable: ML Engineer\nDependencies: US036",
+    "user_story": "Como Sistema quiero analizar patrones de flujo de estudiantes para identificar tendencias\n✅",
+    "acceptance_criteria": [
+      "Algoritmos análisis temporal implementados",
+      "Detección patrones automatizada",
+      "Visualización tendencias disponible"
+    ],
+    "tasks": [
+      "Algoritmos análisis temporal",
+      "Detección patrones flujo",
+      "Visualización tendencias",
+      "Dashboard analítica"
+    ],
+    "story_points": "13",
+    "estimacion": "52h",
+    "prioridad": "Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 13,
+    "title": "[US006] Registrar guardias - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/13",
+    "created_at": "2025-09-02T21:10:49+00:00",
+    "closed_at": "2025-11-06T17:11:48+00:00",
+    "labels": [
+      "enhancement",
+      "user-management",
+      "sprint-2"
+    ],
+    "assignees": [
+      "Angelhc123",
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Administrador** quiero **registrar nuevos guardias** para **ampliar el equipo de seguridad**\n\n## ✅ Acceptance Criteria\n- [ ] Formulario registro\n- [ ] Validación datos\n- [ ] Asignación credenciales\n\n## 📋 Tasks\n- [ ] Diseñar formulario registro\n- [ ] Validaciones de datos\n- [ ] Generación automática credenciales\n- [ ] Notificación al nuevo usuario\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Alta\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US002",
+    "user_story": "Como Administrador quiero registrar nuevos guardias para ampliar el equipo de seguridad\n\n## ✅",
+    "acceptance_criteria": [
+      "Formulario registro",
+      "Validación datos",
+      "Asignación credenciales"
+    ],
+    "tasks": [
+      "Diseñar formulario registro",
+      "Validaciones de datos",
+      "Generación automática credenciales",
+      "Notificación al nuevo usuario"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 12,
+    "title": "[US036] Recopilar datos ML - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/12",
+    "created_at": "2025-09-02T21:08:51+00:00",
+    "closed_at": "2025-10-30T18:31:41+00:00",
+    "labels": [
+      "enhancement",
+      "database",
+      "sprint-4"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "📋 User Story\nComo Sistema quiero recopilar datos entrada/salida por horarios para alimentar algoritmos ML\n✅ Acceptance Criteria\n\n- [ ]  ETL datos históricos implementado\n- [ ]  Estructura para ML definida\n- [ ]  Limpieza datos automatizada\n\n📝 Tasks\n\n- [ ]  Diseño ETL datos históricos\n- [ ]  Estructura base datos ML\n- [ ]  Algoritmos limpieza datos\n- [ ]  Validación calidad datos\n\nStory Points: 8\nEstimación: 32h\nPrioridad: Crítica\nResponsable: Data Engineer\nDependencies: US030",
+    "user_story": "Como Sistema quiero recopilar datos entrada/salida por horarios para alimentar algoritmos ML\n✅",
+    "acceptance_criteria": [
+      "ETL datos históricos implementado",
+      "Estructura para ML definida",
+      "Limpieza datos automatizada"
+    ],
+    "tasks": [
+      "Diseño ETL datos históricos",
+      "Estructura base datos ML",
+      "Algoritmos limpieza datos",
+      "Validación calidad datos"
+    ],
+    "story_points": "8",
+    "estimacion": "32h",
+    "prioridad": "Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 11,
+    "title": "[US017] Leer ID único pulsera - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/11",
+    "created_at": "2025-09-02T19:10:34+00:00",
+    "closed_at": "2025-11-06T21:45:57+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "nfc"
+    ],
+    "assignees": [
+      "KrCrimson",
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **leer ID único en rango 10cm** para **identificar cada pulsera específicamente**\n\n## ✅ Acceptance Criteria\n- [ ] Lectura precisa en 10cm\n- [ ] ID único válido\n- [ ] Manejo errores lectura\n\n## 📋 Tasks\n- [ ] Algoritmo lectura precisa\n- [ ] Validación ID único\n- [ ] Manejo errores lectura\n- [ ] Logs de eventos NFC\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Crítica\n**Responsable:** Mobile Software Architect\n**Dependencies:** US016",
+    "user_story": "Como Sistema quiero leer ID único en rango 10cm para identificar cada pulsera específicamente\n\n## ✅",
+    "acceptance_criteria": [
+      "Lectura precisa en 10cm",
+      "ID único válido",
+      "Manejo errores lectura"
+    ],
+    "tasks": [
+      "Algoritmo lectura precisa",
+      "Validación ID único",
+      "Manejo errores lectura",
+      "Logs de eventos NFC"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 10,
+    "title": "[US016] Detectar pulseras NFC - 13pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/10",
+    "created_at": "2025-09-02T19:10:08+00:00",
+    "closed_at": "2025-11-06T21:40:47+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "nfc"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **detectar pulseras NFC automáticamente** para **identificar estudiantes en proximidad**\n\n## ✅ Acceptance Criteria\n- [x] Detección en 10cm\n- [ ] Lectura automática\n- [ ] Feedback visual/sonoro\n\n## 📋 Tasks\n- [x] Driver NFC reader\n- [x] Algoritmo detección 10cm\n- [ ] Feedback visual/auditivo\n- [ ] Calibración distancia\n- [x] Pruebas hardware\n\n**Story Points:** 13\n**Estimación:** 52h\n**Prioridad:** Crítica\n**Responsable:** Mobile Software Architect\n**Prerequisites:** Hardware NFC",
+    "user_story": "Como Sistema quiero detectar pulseras NFC automáticamente para identificar estudiantes en proximidad\n\n## ✅",
+    "acceptance_criteria": [
+      "Detección en 10cm",
+      "Lectura automática",
+      "Feedback visual/sonoro"
+    ],
+    "tasks": [
+      "Driver NFC reader",
+      "Algoritmo detección 10cm",
+      "Feedback visual/auditivo",
+      "Calibración distancia",
+      "Pruebas hardware"
+    ],
+    "story_points": "** 13",
+    "estimacion": "** 52h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 9,
+    "title": "[US015] Verificar vigencia matrícula - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/9",
+    "created_at": "2025-09-02T19:09:29+00:00",
+    "closed_at": "2025-09-18T21:39:50+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "database"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **verificar vigencia de matrícula** para **autorizar solo estudiantes activos**\n\n## ✅ Acceptance Criteria\n- [ ] Consulta vigencia automática\n- [ ] Indicador visual claro\n- [ ] Manejo expirados\n\n## 📋 Tasks\n- [ ] Lógica validación vigencia\n- [ ] Indicadores visuales estado\n- [ ] Alertas matrícula expirada\n- [ ] Configuración períodos académicos\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Alta\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US011",
+    "user_story": "Como Sistema quiero verificar vigencia de matrícula para autorizar solo estudiantes activos\n\n## ✅",
+    "acceptance_criteria": [
+      "Consulta vigencia automática",
+      "Indicador visual claro",
+      "Manejo expirados"
+    ],
+    "tasks": [
+      "Lógica validación vigencia",
+      "Indicadores visuales estado",
+      "Alertas matrícula expirada",
+      "Configuración períodos académicos"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 8,
+    "title": "[US014] Obtener datos básicos - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/8",
+    "created_at": "2025-09-02T19:09:00+00:00",
+    "closed_at": "2025-09-04T21:33:21+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "database"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **ver ID, nombre y carrera** para **identificar al estudiante**\n\n## ✅ Acceptance Criteria\n- [ ] Display datos claros\n- [ ] Formato consistente\n- [ ] Carga rápida\n\n## 📋 Tasks\n- [ ] API datos básicos estudiante\n- [ ] Componente UI display\n- [ ] Formateo de datos\n- [ ] Optimización carga\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Media\n**Responsable:** Mid Tester\n**Dependencies:** US011",
+    "user_story": "Como Guardia quiero ver ID, nombre y carrera para identificar al estudiante\n\n## ✅",
+    "acceptance_criteria": [
+      "Display datos claros",
+      "Formato consistente",
+      "Carga rápida"
+    ],
+    "tasks": [
+      "API datos básicos estudiante",
+      "Componente UI display",
+      "Formateo de datos",
+      "Optimización carga"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 7,
+    "title": "[US013] Consultar estado estudiante - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/7",
+    "created_at": "2025-09-02T19:08:33+00:00",
+    "closed_at": "2025-09-18T21:26:23+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "database"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **verificar estado activo/inactivo** para **validar elegibilidad de acceso**\n\n## ✅ Acceptance Criteria\n- [ ] Query estado en tiempo real\n- [ ] Cache temporal\n- [ ] Indicador visual claro\n\n## 📋 Tasks\n- [ ] API consulta estado\n- [ ] Implementar caché Redis\n- [ ] Indicadores visuales UI\n- [ ] Optimización queries\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Alta\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US011",
+    "user_story": "Como Sistema quiero verificar estado activo/inactivo para validar elegibilidad de acceso\n\n## ✅",
+    "acceptance_criteria": [
+      "Query estado en tiempo real",
+      "Cache temporal",
+      "Indicador visual claro"
+    ],
+    "tasks": [
+      "API consulta estado",
+      "Implementar caché Redis",
+      "Indicadores visuales UI",
+      "Optimización queries"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Alta",
+    "dependencias": ""
+  },
+  {
+    "number": 6,
+    "title": "[US011] Conexión BD estudiantes - 8pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/6",
+    "created_at": "2025-09-02T19:06:17+00:00",
+    "closed_at": "2025-09-11T20:38:55+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "database"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **conectar con BD existente** para **validar datos estudiantiles**\n\n## ✅ Acceptance Criteria\n- [x] Conexión estable\n- [x] Consulta tiempo real\n- [x] Manejo errores conexión\n\n## 📋 Tasks\n- [x] Configurar connection string\n- [x] Implementar pool de conexiones\n- [x] Manejo de errores y reconexión\n- [x] Pruebas de rendimiento\n\n**Story Points:** 8\n**Estimación:** 32h\n**Prioridad:** Crítica\n**Responsable:** Mobile Software Architect\n**Prerequisites:** Acceso BD universidad",
+    "user_story": "Como Sistema quiero conectar con BD existente para validar datos estudiantiles\n\n## ✅",
+    "acceptance_criteria": [
+      "Conexión estable",
+      "Consulta tiempo real",
+      "Manejo errores conexión"
+    ],
+    "tasks": [
+      "Configurar connection string",
+      "Implementar pool de conexiones",
+      "Manejo de errores y reconexión",
+      "Pruebas de rendimiento"
+    ],
+    "story_points": "** 8",
+    "estimacion": "** 32h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 5,
+    "title": "[US005] Cambio de contraseña - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/5",
+    "created_at": "2025-08-21T19:09:16+00:00",
+    "closed_at": "2025-09-30T19:27:20+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "authentication"
+    ],
+    "assignees": [
+      "Angelhc123"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Usuario** quiero **cambiar mi contraseña** para **mantener mi cuenta segura**\n\n## ✅ Acceptance Criteria\n- [ ] Validación contraseña actual\n- [ ] Nueva contraseña segura\n- [ ] Confirmación\n\n## 📋 Tasks\n- [ ] Formulario cambio contraseña\n- [ ] Validaciones de seguridad\n- [ ] Encriptación y almacenamiento\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Baja\n**Responsable:** Mid Tester\n**Dependencies:** US001",
+    "user_story": "Como Usuario quiero cambiar mi contraseña para mantener mi cuenta segura\n\n## ✅",
+    "acceptance_criteria": [
+      "Validación contraseña actual",
+      "Nueva contraseña segura",
+      "Confirmación"
+    ],
+    "tasks": [
+      "Formulario cambio contraseña",
+      "Validaciones de seguridad",
+      "Encriptación y almacenamiento"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Baja",
+    "dependencias": ""
+  },
+  {
+    "number": 4,
+    "title": "[US004] Sesión configurable - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/4",
+    "created_at": "2025-08-21T19:08:56+00:00",
+    "closed_at": "2025-09-30T19:36:25+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "user-management"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Administrador** quiero **configurar tiempo de sesión activa** para **balancear seguridad y usabilidad**\n\n## ✅ Acceptance Criteria\n- [ ] Configuración por admin\n- [ ] Auto-logout por tiempo\n- [ ] Notificación previa\n\n## 📋 Tasks\n- [ ] Crear configuración de timeout\n- [ ] Implementar auto-logout\n- [ ] Agregar notificaciones previas\n- [ ] Panel de configuración admin\n\n**Story Points:** 5\n**Estimación:** 20h\n**Prioridad:** Media\n**Responsable:** Mobile Software Architect\n**Dependencies:** US001, US002",
+    "user_story": "Como Administrador quiero configurar tiempo de sesión activa para balancear seguridad y usabilidad\n\n## ✅",
+    "acceptance_criteria": [
+      "Configuración por admin",
+      "Auto-logout por tiempo",
+      "Notificación previa"
+    ],
+    "tasks": [
+      "Crear configuración de timeout",
+      "Implementar auto-logout",
+      "Agregar notificaciones previas",
+      "Panel de configuración admin"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 20h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 3,
+    "title": "[US003] Logout seguro - 2pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/3",
+    "created_at": "2025-08-21T19:07:20+00:00",
+    "closed_at": "2025-09-18T21:16:21+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "authentication"
+    ],
+    "assignees": [
+      "KrCrimson"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Usuario** quiero **cerrar sesión de forma segura** para **proteger mi cuenta**\n\n## ✅ Acceptance Criteria\n- [x] Botón logout visible\n- [x] Limpieza de sesión\n- [x] Redirección a login\n\n## 📋 Tasks\n- [x] Implementar función logout\n- [x] Limpiar datos de sesión\n- [x] Redireccionar a login\n\n**Story Points:** 2\n**Estimación:** 8h\n**Prioridad:** Media\n**Responsable:** Senior Mobile Developer\n**Dependencies:** US001",
+    "user_story": "Como Usuario quiero cerrar sesión de forma segura para proteger mi cuenta\n\n## ✅",
+    "acceptance_criteria": [
+      "Botón logout visible",
+      "Limpieza de sesión",
+      "Redirección a login"
+    ],
+    "tasks": [
+      "Implementar función logout",
+      "Limpiar datos de sesión",
+      "Redireccionar a login"
+    ],
+    "story_points": "** 2",
+    "estimacion": "** 8h",
+    "prioridad": "** Media",
+    "dependencias": ""
+  },
+  {
+    "number": 2,
+    "title": "[US002] Manejo de roles - 3pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/2",
+    "created_at": "2025-08-17T06:07:33+00:00",
+    "closed_at": "2025-09-04T21:45:33+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "user-management"
+    ],
+    "assignees": [],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Sistema** quiero **distinguir roles Guardia y Administrador** para **controlar acceso a funcionalidades**\n\n## ✅ Acceptance Criteria\n- [ ] Identificación de rol post-login\n- [ ] Interfaz adaptativa\n- [ ] Restricciones por rol\n\n## 📋 Tasks\n- [x] Crear tabla de roles en BD\n- [ ] Implementar middleware de autorización\n- [ ] Adaptar UI por roles\n\n**Story Points:** 3\n**Estimación:** 12h\n**Prioridad:** Crítica\n**Responsable:** Mobile Software Architect\n**Dependencies:** US001",
+    "user_story": "Como Sistema quiero distinguir roles Guardia y Administrador para controlar acceso a funcionalidades\n\n## ✅",
+    "acceptance_criteria": [
+      "Identificación de rol post-login",
+      "Interfaz adaptativa",
+      "Restricciones por rol"
+    ],
+    "tasks": [
+      "Crear tabla de roles en BD",
+      "Implementar middleware de autorización",
+      "Adaptar UI por roles"
+    ],
+    "story_points": "** 3",
+    "estimacion": "** 12h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  },
+  {
+    "number": 1,
+    "title": "[US001] Autenticación de guardias - 5pts",
+    "state": "closed",
+    "url": "https://github.com/Sistema-de-control-de-acceso/MovilesII/issues/1",
+    "created_at": "2025-08-17T05:16:05+00:00",
+    "closed_at": "2025-09-04T21:32:57+00:00",
+    "labels": [
+      "enhancement",
+      "sprint-1",
+      "authentication"
+    ],
+    "assignees": [
+      "Zod0808"
+    ],
+    "milestone": null,
+    "body": "## 📝 User Story\nComo **Guardia** quiero **autenticarme con usuario y contraseña** para **acceder al sistema de control**\n\n## ✅ Acceptance Criteria\n- [ ] Sistema valida credenciales\n- [ ] Manejo de errores\n- [ ] Interfaz de login funcional\n\n## 📋 Tasks\n- [ ] Diseñar interfaz de login\n- [ ] Implementar validación de credenciales\n- [ ] Configurar sesiones de usuario\n- [ ] Pruebas de seguridad\n\n**Story Points:** 5\n**Estimación:** 16h\n**Prioridad:** Crítica\n**Responsable:** Senior Mobile Developer",
+    "user_story": "Como Guardia quiero autenticarme con usuario y contraseña para acceder al sistema de control\n\n## ✅",
+    "acceptance_criteria": [
+      "Sistema valida credenciales",
+      "Manejo de errores",
+      "Interfaz de login funcional"
+    ],
+    "tasks": [
+      "Diseñar interfaz de login",
+      "Implementar validación de credenciales",
+      "Configurar sesiones de usuario",
+      "Pruebas de seguridad"
+    ],
+    "story_points": "** 5",
+    "estimacion": "** 16h",
+    "prioridad": "** Crítica",
+    "dependencias": ""
+  }
+]
