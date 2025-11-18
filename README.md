@@ -1,390 +1,238 @@
-# 🎓 Sistema de Control de Acceso Universitario
+# 📋 EXAMEN PRÁCTICO – UNIDAD III
 
-Sistema completo de control de acceso a instalaciones universitarias con aplicación móvil Flutter y backend Node.js/Express, integrando tecnologías NFC, funcionalidad offline, Machine Learning, dashboard web en tiempo real y funcionalidades avanzadas de administración, seguridad y auditoría.
-
-[![Estado del Proyecto](https://img.shields.io/badge/Estado-100%25%20Completado-success)](./docs/esenciales/INFORME_AVANCE_USER_STORIES.md)
-[![User Stories](https://img.shields.io/badge/User%20Stories-68%2F68-success)](./docs/esenciales/user_stories.md)
-[![Tests](https://img.shields.io/badge/Tests-160%2B-passing)](./backend/tests/README.md)
-[![Cobertura](https://img.shields.io/badge/Cobertura-70%25%2B-success)](./docs/esenciales/COVERAGE_REPORTS.md)
+**Curso:** Desarrollo de Aplicaciones Móviles  
+**Tema:** Automatización de calidad con GitHub Actions  
+**Fecha:** 18/11/2025  
+**Estudiante:** Cesár Fabián Chavez Linares
 
 ---
 
-## 📊 Estado del Proyecto
+## 🔗 Repositorio GitHub
 
-**Estado:** ✅ **100% COMPLETADO**
-
-| Métrica | Valor | Estado |
-|---------|-------|--------|
-| **User Stories Originales** | 60/60 (100%) | ✅ Completo |
-| **Nuevas User Stories** | 5/8 (62.5%) | 🟡 En progreso |
-| **Tests Unitarios** | 160+ tests | ✅ Completo |
-| **Cobertura de Tests** | 70%+ | ✅ Completo |
-| **Endpoints API** | 62+ endpoints | ✅ Completo |
-| **Servicios Backend** | 21 servicios | ✅ Completo |
-
-**Última Actualización:** 18 de Noviembre 2025
+**URL del Repositorio:** [https://github.com/Zod0808/SM2_ExamenUnidad3](https://github.com/Zod0808/SM2_ExamenUnidad3)
 
 ---
 
-## 🚀 Inicio Rápido
+## 📸 Evidencias del Proyecto
 
-### Requisitos Previos
-- **Flutter SDK** >= 3.7.2
-- **Node.js** >= 18.0.0
-- **MongoDB** (local o Atlas)
-- **Git**
+### 1. Estructura de Carpetas `.github/workflows/`
 
-### Instalación
+**Captura de Pantalla 1:** Estructura de carpetas del proyecto mostrando la carpeta `.github/workflows/`
 
-```bash
-# 1. Clonar repositorio
-git clone https://github.com/Sistema-de-control-de-acceso/MovilesII.git
-cd MovilesII
+![Estructura de Carpetas .github/workflows/](./capturas/estrucutura_worflow.png)
 
-# 2. Backend
-cd backend
-npm install
-cp .env.example .env  # Configurar variables de entorno
-npm start
+---
 
-# 3. Frontend (en otra terminal)
-cd ..
-flutter pub get
-flutter run
+### 2. Contenido del Archivo `quality-check.yml`
+
+**Captura de Pantalla 2:** Contenido del archivo `quality-check.yml`
+
+El archivo `quality-check.yml` contiene el siguiente workflow:
+
+```yaml
+name: Quality Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.19.0'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Run tests
+        run: flutter test
 ```
 
-### Variables de Entorno (Backend)
-
-```env
-MONGODB_URI=mongodb://localhost:27017/ASISTENCIA
-PORT=3000
-JWT_SECRET=tu_secret_jwt_aqui
-NODE_ENV=development
-```
-
-**Ver [DEPLOYMENT.md](./docs/esenciales/DEPLOYMENT.md) para configuración completa.**
+**Ubicación del archivo:** `.github/workflows/quality-check.yml`
 
 ---
 
-## ✨ Características Principales
+### 3. Ejecución del Workflow en la Pestaña Actions
 
-### 🔐 Autenticación y Seguridad
-- Autenticación multi-rol (Admin, Guardias, Sistema)
-- Sesión configurable con timeout y advertencias
-- Sistema de auditoría avanzada con trazabilidad completa
-- Logs detallados de todas las operaciones críticas
+**Captura de Pantalla 3:** Ejecución exitosa del workflow en la pestaña **Actions** de GitHub
 
-### 📱 Control NFC
-- Detección automática de pulseras NFC
-- Validación en tiempo real contra base de datos
-- Autorización manual por guardia
-- Múltiples detecciones simultáneas con cola
+![Ejecución del Workflow en Actions](./capturas/quality-check.png)
 
-### 🔄 Funcionalidad Offline
-- Almacenamiento local con Hive/SQLite
-- Sincronización bidireccional automática
-- Resolución automática de conflictos
-- Indicador de estado de conexión
+La captura muestra:
+- La lista de workflows ejecutados en la pestaña Actions
+- El estado "passed" o "✓" en verde para todas las verificaciones
+- Los detalles de ejecución (pasos completados, tiempo de ejecución, etc.)
 
-### 🤖 Machine Learning
-- Predicción de flujo de estudiantes
-- Análisis de horarios pico
-- Optimización de horarios de transporte
-- Alertas de congestión
-- Monitoreo de drift de modelos
+**Resultado del Workflow:** ✅ **100% PASSED**
 
-### 📊 Dashboard y Reportes
-- Dashboard web en tiempo real con WebSockets
-- Reportes avanzados y comparativos
-- Exportación a PDF y Excel
-- Análisis de ROI y métricas de eficiencia
-- Reportes de actividad de guardias
-
-### 🧪 Testing y Calidad
-- 160+ tests unitarios (Backend y Flutter)
-- Cobertura mínima del 70%
-- CI/CD automatizado con GitHub Actions
-- Reportes de cobertura automáticos
-
-### 🔒 Auditoría Avanzada
-- Búsqueda avanzada de logs
-- Dashboard de auditoría con estadísticas
-- Detección de actividad sospechosa
-- Trazabilidad completa de entidades
-- Exportación de reportes (JSON, CSV, PDF)
+El workflow se ejecuta automáticamente cuando se realiza:
+- Un `push` a la rama `main`
+- Un `pull request` hacia la rama `main`
 
 ---
 
-## 🏗️ Arquitectura
+## 📝 Explicación de lo Realizado
 
-```
-┌─────────────────┐
-│  Flutter App    │  ← Aplicación móvil (Android/iOS)
-│  (Frontend)     │     - NFC, Offline, UI
-└────────┬────────┘
-         │ HTTP/WebSocket
-         ▼
-┌─────────────────┐
-│  Node.js/Express│  ← Backend API
-│  (Backend)      │     - REST API, WebSockets
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│     MongoDB     │  ← Base de datos
-│   (Database)    │     - Datos, Logs, Auditoría
-└─────────────────┘
-```
+### 1. Configuración del Repositorio
 
-**Ver [ARCHITECTURE.md](./docs/esenciales/ARCHITECTURE.md) para detalles completos.**
+Se creó un repositorio público en GitHub con el nombre `SM2_ExamenUnidad3` y se copió todo el contenido del proyecto móvil desarrollado durante el curso, incluyendo todos los archivos y carpetas del proyecto Flutter.
 
----
+### 2. Creación de la Estructura de Carpetas
 
-## 📁 Estructura del Proyecto
+Se crearon las siguientes carpetas en la raíz del repositorio:
 
-```
-MovilesII/
-├── lib/                          # Aplicación Flutter
-│   ├── models/                   # 11 modelos de datos
-│   ├── services/                 # 17 servicios
-│   ├── viewmodels/               # 8 ViewModels (MVVM)
-│   ├── views/                    # 28+ vistas
-│   └── widgets/                  # 8 widgets reutilizables
-│
-├── backend/                      # Backend Node.js
-│   ├── services/                 # 21 servicios
-│   ├── models/                   # Modelos Mongoose
-│   ├── ml/                       # Machine Learning
-│   ├── tests/                    # 120+ tests backend
-│   └── index.js                  # Servidor principal
-│
-├── test/                         # Tests Flutter
-│   ├── viewmodels/               # 36+ tests
-│   └── widgets/                  # 4+ tests
-│
-├── docs/                         # Documentación
-│   ├── user_stories.md           # 60 US originales
-│   ├── NUEVAS_USER_STORIES...    # 8 nuevas US
-│   ├── API.md                    # Documentación API
-│   └── ...                       # Más documentación
-│
-└── .github/workflows/            # CI/CD
-    ├── ci.yml                    # Pipeline principal
-    └── test-only.yml             # Tests optimizados
-```
+- **`.github/workflows/`**: Carpeta donde se almacenan los workflows de GitHub Actions
+- **`test/`**: Carpeta donde se encuentran los archivos de pruebas (ya existía con otros tests del proyecto)
 
----
+### 3. Creación del Workflow de GitHub Actions
 
-## 🛠️ Tecnologías
+Se creó el archivo `quality-check.yml` dentro de `.github/workflows/` con un flujo de trabajo que incluye:
 
-### Frontend
-- **Flutter** 3.7.2 - Framework multiplataforma
-- **Provider** - Gestión de estado
-- **Hive/SQLite** - Almacenamiento offline
-- **flutter_nfc_kit** - Integración NFC
-- **socket_io_client** - WebSockets tiempo real
-- **fl_chart** - Gráficos y visualizaciones
+#### **Triggers (Disparadores):**
+- **Push a main**: Se ejecuta automáticamente cuando se hace un commit y push a la rama `main`
+- **Pull Request a main**: Se ejecuta automáticamente cuando se crea un pull request hacia la rama `main`
 
-### Backend
-- **Node.js** 18+ - Runtime JavaScript
-- **Express.js** - Framework web
-- **MongoDB/Mongoose** - Base de datos NoSQL
-- **Socket.IO** - WebSockets tiempo real
-- **Jest** - Framework de testing
-- **node-cron** - Tareas programadas
+#### **Jobs (Trabajos):**
+El workflow contiene un job llamado `analyze` que se ejecuta en un runner de Ubuntu (última versión disponible).
 
-### DevOps
-- **GitHub Actions** - CI/CD
-- **Jest** - Testing backend
-- **Flutter Test** - Testing frontend
-- **Codecov** - Cobertura de código
+#### **Steps (Pasos del Workflow):**
+1. **Checkout del código**: Usa `actions/checkout@v3` para obtener el código del repositorio en el runner
+2. **Configuración de Flutter**: Instala Flutter versión 3.19.0 usando `subosito/flutter-action@v2`
+3. **Instalación de dependencias**: Ejecuta `flutter pub get` para instalar todas las dependencias del proyecto
+4. **Análisis de código**: Ejecuta `flutter analyze` para verificar que el código cumpla con las buenas prácticas de estilo, convenciones y que no haya errores sintácticos
+5. **Ejecución de tests**: Ejecuta `flutter test` para ejecutar todas las pruebas automatizadas definidas en la carpeta `test/`
 
----
+### 4. Creación del Archivo de Pruebas Unitarias
 
-## 🧪 Testing
+Se creó el archivo `test/main_test.dart` que contiene 8 pruebas unitarias relacionadas con los modelos del proyecto de Control de Acceso Universitario:
 
-### Backend
-```bash
-cd backend
-npm test                    # Todos los tests con cobertura
-npm run test:unit           # Solo tests unitarios
-npm run test:integration    # Solo tests de integración
-npm run coverage:report     # Generar reporte Markdown
-```
+#### **Grupo 1: Pruebas de AlumnoModel (Tests 1-3)**
+1. **Test 1**: Crear AlumnoModel y validar propiedades como `nombreCompleto`, `isActive`, `codigoUniversitario`
+2. **Test 2**: Convertir AlumnoModel desde JSON usando el método `fromJson`
+3. **Test 3**: Convertir AlumnoModel a JSON usando el método `toJson`
 
-### Frontend
-```bash
-flutter test                # Todos los tests
-flutter test --coverage     # Con cobertura
-```
+#### **Grupo 2: Pruebas de TipoMovimiento Enum (Tests 4-6)**
+4. **Test 4**: Convertir string a TipoMovimiento de entrada y validar descripción e icono
+5. **Test 5**: Convertir string a TipoMovimiento de salida y validar descripción e icono
+6. **Test 6**: Validar conversión de TipoMovimiento a string usando el método `toValue`
 
-**Cobertura:** 70%+ mínimo | **Tests:** 160+ tests  
-**Ver [COVERAGE_REPORTS.md](./docs/esenciales/COVERAGE_REPORTS.md) para más detalles.**
+#### **Grupo 3: Pruebas de AsistenciaModel (Tests 7-8)**
+7. **Test 7**: Crear AsistenciaModel de entrada y validar propiedades como `esEntrada`, `esSalida`, `entradaTipo`
+8. **Test 8**: Crear AsistenciaModel de salida con autorización manual y validar propiedades relacionadas con guardias
+
+Estas pruebas están relacionadas con los modelos reales del proyecto y verifican la funcionalidad básica de los mismos.
+
+### 5. Verificación de Ejecución Automática
+
+Una vez subidos los archivos al repositorio y realizado un commit, el workflow se ejecuta automáticamente. La verificación se puede observar en la pestaña **Actions** de GitHub, donde se muestra:
+
+- ✅ Estado de ejecución (passed/failed)
+- 📊 Detalles de cada paso del workflow
+- ⏱️ Tiempo de ejecución
+- 📝 Logs completos de cada operación
+
+Para visualizar la ejecución:
+1. Ve al repositorio en GitHub: https://github.com/Zod0808/SM2_ExamenUnidad3
+2. Haz clic en la pestaña **Actions**
+3. Verás una lista de ejecuciones recientes del workflow
+4. Puedes hacer clic sobre una ejecución para ver los pasos, salidas, errores y advertencias
+
+### 6. Funcionalidad de los Comandos del Workflow
+
+#### **`flutter analyze`**
+- Verifica que el código cumpla con las buenas prácticas de estilo y convenciones de Flutter
+- Detecta errores sintácticos, warnings e imports innecesarios
+- Valida que los nombres de variables, funciones y clases estén bien definidos
+- Ideal para mantener la calidad y consistencia del código
+
+#### **`flutter test`**
+- Ejecuta todas las pruebas automatizadas definidas en la carpeta `test/`
+- Verifica que las funciones críticas de la aplicación sigan funcionando correctamente tras cada cambio
+- Asegura la estabilidad del proyecto y previene regresiones
+- Incluye las 8 pruebas unitarias creadas en `test/main_test.dart` y los demás tests existentes del proyecto
+
+### 7. Resultados del Workflow
+
+El workflow se ejecuta exitosamente con un **100% passed**, lo que significa:
+- ✅ Todas las verificaciones de `flutter analyze` pasaron sin errores
+- ✅ Todas las pruebas unitarias de `flutter test` se ejecutaron correctamente
+- ✅ El código cumple con los estándares de calidad establecidos
+- ✅ No se detectaron errores de sintaxis ni warnings críticos
 
 ---
 
-## 📚 Documentación
+## ✅ Checklist de Entregables
 
-### 📖 Documentación Esencial
-
-- **[User Stories](./docs/esenciales/user_stories.md)** - 60 User Stories originales completadas
-- **[Nuevas User Stories](./docs/esenciales/NUEVAS_USER_STORIES_PROPUESTAS.md)** - 8 nuevas US (5 completadas)
-- **[API Documentation](./docs/esenciales/API.md)** - Documentación completa de endpoints
-- **[Architecture](./docs/esenciales/ARCHITECTURE.md)** - Arquitectura del sistema
-- **[Deployment](./docs/esenciales/DEPLOYMENT.md)** - Guía de despliegue
-
-### 🔧 Documentación Técnica
-
-- **[CI/CD Testing](./docs/esenciales/CI_CD_TESTING.md)** - Configuración de CI/CD
-- **[Coverage Reports](./docs/esenciales/COVERAGE_REPORTS.md)** - Reportes de cobertura
-- **[Auditoría Avanzada](./docs/esenciales/AUDITORIA_AVANZADA.md)** - Sistema de auditoría
-- **[Backend Tests](./backend/tests/README.md)** - Guía de testing backend
-- **[Machine Learning](./backend/ml/README_COMPLETO_ML.md)** - Sistema ML
-
-### 📊 Reportes y Análisis
-
-- **[Informe de Avance](./docs/esenciales/INFORME_AVANCE_USER_STORIES.md)** - Estado detallado de todas las US
-- **[Resumen de Completación](./docs/completacion/RESUMEN_COMPLETACION_USER_STORIES.md)** - Resumen consolidado de US completadas
-- **[Índice de Documentación](./docs/esenciales/INDICE_DOCUMENTACION.md)** - Guía de todos los documentos
-
-**Ver [Índice de Documentación](./docs/esenciales/INDICE_DOCUMENTACION.md) para lista completa.**
+- [x] Repositorio público `SM2_ExamenUnidad3` creado en GitHub
+- [x] Contenido del proyecto móvil copiado al repositorio
+- [x] Carpeta `.github/workflows/` creada
+- [x] Archivo `quality-check.yml` creado en `.github/workflows/`
+- [x] Archivo `test/main_test.dart` creado con al menos 3 pruebas unitarias (8 pruebas creadas)
+- [x] Workflow configurado para ejecutarse en `push` y `pull_request`
+- [x] Workflow ejecutándose automáticamente
+- [x] Workflow pasando con 100% de éxito
+- [x] README.md con documentación completa del examen
 
 ---
 
-## 🎯 User Stories Completadas
+## 🎯 Objetivos Cumplidos
 
-### User Stories Originales: 60/60 (100%) ✅
+### Automatización de Calidad con GitHub Actions
 
-**Sprint 1:** Autenticación y Fundación (10 US)  
-**Sprint 2:** Core y NFC (19 US)  
-**Sprint 3:** Funcionalidades Avanzadas (9 US)  
-**Sprint 4:** Machine Learning (10 US)  
-**Sprint 5:** Dashboard y Reportes (12 US)
+Este examen implementa un flujo de trabajo automatizado que permite:
 
-### Nuevas User Stories: 5/8 (62.5%) 🟡
+1. **Análisis Automático de Código**: Cada vez que se hace un push o pull request, se analiza automáticamente el código para detectar errores y problemas de estilo.
 
-- ✅ **US061:** Pruebas unitarias backend
-- ✅ **US062:** Pruebas unitarias frontend mobile
-- ✅ **US063:** Integración de tests en CI/CD
-- ✅ **US064:** Cobertura de código y reportes
-- ✅ **US067:** Auditoría y trazabilidad avanzada
-- 🟡 **US065:** Optimizar tamaño APK (pendiente)
-- 🟡 **US066:** Optimización workflows (pendiente)
-- 🟡 **US068:** Beta testing (pendiente)
+2. **Ejecución Automática de Tests**: Todas las pruebas unitarias se ejecutan automáticamente para verificar que el código funciona correctamente.
 
-**Ver [user_stories.md](./docs/esenciales/user_stories.md) y [NUEVAS_USER_STORIES_PROPUESTAS.md](./docs/esenciales/NUEVAS_USER_STORIES_PROPUESTAS.md) para detalles.**
+3. **Verificación Continua**: El sistema garantiza que el código siempre cumpla con los estándares de calidad antes de ser integrado a la rama principal.
+
+4. **Integración DevOps**: Se integra el proceso de desarrollo con prácticas DevOps, permitiendo una verificación continua del código sin intervención manual.
 
 ---
 
-## 🔐 Seguridad
+## 📚 Conceptos Aplicados
 
-- ✅ Autenticación JWT con refresh tokens
-- ✅ Hash de contraseñas con bcrypt
-- ✅ Middleware de autenticación en rutas protegidas
-- ✅ Sistema de auditoría avanzada
-- ✅ Logs detallados de operaciones críticas
-- ✅ Detección de actividad sospechosa
-- ✅ Trazabilidad completa de cambios
-- ✅ Backup automático de datos
+### GitHub Actions
+- **Workflows**: Flujos de trabajo automatizados definidos en archivos YAML
+- **Jobs**: Tareas que se ejecutan en runners (máquinas virtuales)
+- **Steps**: Pasos individuales dentro de un job
+- **Actions**: Acciones reutilizables que facilitan tareas comunes (como configurar Flutter)
 
----
+### CI/CD (Continuous Integration/Continuous Deployment)
+- **Continuous Integration**: Integración continua del código con verificación automática
+- **Automatización**: Ejecución automática de procesos de calidad
+- **Feedback Rápido**: Notificación inmediata de problemas en el código
 
-## 🚀 CI/CD
-
-El proyecto incluye pipelines automatizados de CI/CD:
-
-- ✅ Tests automáticos en cada push y PR
-- ✅ Verificación de cobertura mínima (70%)
-- ✅ Reportes de cobertura automáticos
-- ✅ Build verification
-- ✅ Code formatting checks
-
-**Ver [CI_CD_TESTING.md](./docs/esenciales/CI_CD_TESTING.md) para más detalles.**
+### Testing Automatizado
+- **Pruebas Unitarias**: Verificación de funcionalidades específicas del código
+- **Ejecución Automática**: Tests que se ejecutan sin intervención manual
+- **Validación Continua**: Asegurar que el código funcione correctamente en cada cambio
 
 ---
 
-## 📈 Estadísticas del Proyecto
+## 🔧 Tecnologías Utilizadas
 
-| Componente | Cantidad | Estado |
-|------------|----------|--------|
-| **User Stories** | 65/68 | ✅ 95.6% |
-| **Tests Unitarios** | 160+ | ✅ Completo |
-| **Cobertura** | 70%+ | ✅ Completo |
-| **Servicios Backend** | 21 | ✅ Completo |
-| **Endpoints API** | 62+ | ✅ Completo |
-| **ViewModels** | 8 | ✅ Completo |
-| **Vistas Flutter** | 28+ | ✅ Completo |
-| **Widgets** | 8 | ✅ Completo |
-
----
-
-## 🎉 Funcionalidades Destacadas
-
-### ✨ Implementaciones Recientes
-
-1. **Sistema de Testing Completo**
-   - 120+ tests backend (Jest)
-   - 40+ tests frontend (Flutter Test)
-   - Cobertura del 70%+
-   - CI/CD automatizado
-
-2. **Auditoría Avanzada**
-   - Búsqueda avanzada de logs
-   - Dashboard de estadísticas
-   - Detección de actividad sospechosa
-   - Exportación de reportes
-
-3. **Reportes de Cobertura**
-   - Generación automática
-   - Múltiples formatos (HTML, Markdown, JSON, CSV)
-   - Alertas de umbrales
-   - Integración en CI/CD
-
-4. **Sesión Configurable**
-   - Timeout configurable
-   - Advertencias antes de expiración
-   - Auto-logout
-   - Sincronización con backend
-
-5. **Exportación Avanzada**
-   - PDF con gráficos profesionales
-   - Excel nativo (.xlsx) con múltiples hojas
-   - Reportes completos consolidados
-
----
-
-## 📞 Soporte y Contribución
-
-### Equipo de Desarrollo
-- @Zod0808
-- @Angelhc123
-- @KrCrimson
-- @LunaJuarezJuan
-
-### Recursos
-- **Issues:** [GitHub Issues](https://github.com/Sistema-de-control-de-acceso/MovilesII/issues)
-- **Documentación:** Ver carpeta `docs/`
-- **API:** Ver [API.md](./docs/API.md)
-
----
-
-## 📄 Licencia
-
-Este proyecto es propiedad de la Universidad.
-
----
-
-## 🔗 Enlaces Rápidos
-
-- 📖 [Documentación Completa](./docs/esenciales/INDICE_DOCUMENTACION.md)
-- 🧪 [Guía de Testing](./backend/tests/README.md)
-- 🚀 [Guía de Despliegue](./docs/esenciales/DEPLOYMENT.md)
-- 📊 [Estado de User Stories](./docs/esenciales/INFORME_AVANCE_USER_STORIES.md)
-- 🔒 [Sistema de Auditoría](./docs/esenciales/AUDITORIA_AVANZADA.md)
+- **GitHub Actions**: Plataforma de automatización de workflows
+- **Flutter**: Framework de desarrollo móvil
+- **Dart**: Lenguaje de programación de Flutter
+- **YAML**: Lenguaje de configuración para workflows
+- **Ubuntu**: Sistema operativo del runner (última versión disponible)
 
 ---
 
 **Última Actualización:** 18 de Noviembre 2025  
-**Versión:** 2.1.0  
-**Estado:** ✅ 100% Completado (60/60 US originales) + 5/8 nuevas US  
-**Mejoras Implementadas:** ✅ Rate Limiting, Logging Centralizado, Optimización MongoDB, Documentación API
+**Repositorio:** [https://github.com/Zod0808/SM2_ExamenUnidad3](https://github.com/Zod0808/SM2_ExamenUnidad3)  
+**Estado del Workflow:** ✅ 100% PASSED
