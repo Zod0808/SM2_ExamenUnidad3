@@ -1,0 +1,23 @@
+# Configuración de análisis de Flutter
+# Excluir archivos/carpetas problemáticos del análisis
+
+analyzer:
+  exclude:
+    - "Gráficos flujo horarios/**"
+    - "Desktop/**"
+  
+  errors:
+    # Permitir algunos warnings para no bloquear el workflow
+    unused_import: warning
+    unused_element: warning
+    deprecated_member_use: warning
+    dead_null_aware_expression: warning
+    unnecessary_cast: warning
+    unnecessary_non_null_assertion: warning
+
+linter:
+  rules:
+    - avoid_print
+    - prefer_const_constructors
+    - prefer_const_literals_to_create_immutables
+
